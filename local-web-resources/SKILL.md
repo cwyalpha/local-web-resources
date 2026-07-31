@@ -80,7 +80,6 @@ BASE_URL = http://web-resources.example:8080
 - 用 Lucide 时，在 DOM 就绪后调用 `lucide.createIcons()`；动态插入后再次调用。图标名用官方 kebab-case，例如 `qr-code`，不要写成 `qrcode`。
 - 不可信 Markdown/HTML 必须通过 DOMPurify；不要假设 Markdown 解析器会自动净化。
 - 解析用户提供的 JSON、CSV、Excel 文件时限制大小、捕获异常，不把文件内容拼接进 `innerHTML`。
-- 使用许可受限资源前读取 `references/licenses.md`。`license-gated` 资源不得默认选择。
 
 ## 字体
 
@@ -126,5 +125,4 @@ Mermaid、SVG 和普通 DOM 也使用上述 CSS `font-family`；截图前等待 
 - 机器索引：`components/index.json`
 - 静态 JSON、多页面、表单、图表和导出模式：`references/static-pages.md`
 - Nginx MIME、CORS 和缓存检查：`references/nginx.md`
-- 许可受限资源：`references/licenses.md`
 - 本地检查：运行 `python scripts/validate_resources.py`
