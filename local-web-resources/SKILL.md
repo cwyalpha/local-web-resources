@@ -96,7 +96,7 @@ BASE_URL = http://web-resources.example:8080
 
 不要用 Zhuque Fangsong 代替所有中文正文；它适合仿宋语义。不要为同一文本同时堆叠多个风格相近的首选字体。
 
-Canvas 不会因为字体稍后加载而自动重绘。ECharts 使用 Web 字体时，先等待所用字体，再初始化并 `setOption`；最后设置渲染就绪标志：
+Canvas 不继承 `body` 的 CSS 字体，也不会因为字体稍后加载而自动重绘。ECharts 使用 Web 字体时，先等待所用字体，再初始化；在 option 中显式设置字体后 `setOption`，最后设置渲染就绪标志：
 
 ```js
 window.__RENDER_READY__ = false;
@@ -106,9 +106,15 @@ await Promise.all([
   document.fonts.ready
 ]);
 const chart = echarts.init(document.getElementById('chart'));
+option.textStyle = {
+  ...option.textStyle,
+  fontFamily: '"Noto Sans SC", sans-serif'
+};
 chart.setOption(option);
 requestAnimationFrame(() => { window.__RENDER_READY__ = true; });
 ```
+
+需要不同字形时，在 `title.textStyle`、`legend.textStyle`、`axisLabel` 或 `series.label` 中显式覆盖；不要假设 ECharts Canvas 会继承页面 CSS。
 
 Mermaid、SVG 和普通 DOM 也使用上述 CSS `font-family`；截图前等待 `document.fonts.ready`。
 
