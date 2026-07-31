@@ -18,7 +18,7 @@ BASE_URL = http://web-resources.example:8080
 ## 工作流
 
 1. 根据需求从“默认选型”选择最少的库，不要因为服务器已有资源就全部引用。
-2. “高频入口速查”已覆盖常规用法时，不要再读取对应组件文档；只有需要可选入口、插件、主题或特殊初始化时，才读取 `components/{name}.md`。禁止根据文件名猜测 ESM、UMD、Worker 或插件入口。
+2. 用户已提供真实 `BASE_URL` 且“高频入口速查”已覆盖需求时，直接生成页面；不要先用 `curl`、目录遍历或读取组件文档重复探测资源。只有需要可选入口、插件、主题或特殊初始化时，才读取 `components/{name}.md`。禁止根据文件名猜测 ESM、UMD、Worker 或插件入口。
 3. 高频入口不满足需求时，读取 `components/catalog.md` 查找条件库，再读取选中组件文档；专业/低频库必须明确匹配任务。
 4. CSS 通常放在 `<head>`；普通经典脚本放在内容之后；遵循组件文档记录的 `head-defer`、依赖和加载顺序。
 5. 完成后检查：无公网 URL、无未替换占位符、无缺失路径、无控制台错误；在桌面视口验证主要交互，并检查布局无横向溢出、裁切或难看的强制换行。
@@ -87,9 +87,36 @@ BASE_URL = http://web-resources.example:8080
 统一入口见“高频入口速查”。
 
 - 通用中文界面：`'Noto Sans SC', 'Inter', sans-serif`
-- 正式报告：`'Noto Serif SC', Georgia, serif`
+- 正式报告、长篇正文：`'Noto Serif SC', 'Merriweather', serif`
+- 公文仿宋、正式说明文字：`'Zhuque Fangsong', 'Noto Serif SC', serif`
+- 文艺、文化或楷体风格：`'LXGW WenKai', 'Noto Serif SC', serif`
+- 纯英文衬线正文：`'Merriweather', Georgia, serif`
 - 中文等宽内容：`'LXGW WenKai Mono', 'JetBrains Mono', monospace`
 - 纯代码：`'JetBrains Mono', monospace`
+
+不要用 Zhuque Fangsong 代替所有中文正文；它适合仿宋语义。不要为同一文本同时堆叠多个风格相近的首选字体。
+
+Canvas 不继承 `body` 的 CSS 字体，也不会因为字体稍后加载而自动重绘。ECharts 使用 Web 字体时，先等待所用字体，再初始化；在 option 中显式设置字体后 `setOption`，最后设置渲染就绪标志：
+
+```js
+window.__RENDER_READY__ = false;
+await Promise.all([
+  document.fonts.load('16px "Zhuque Fangsong"', '中文字体检查'),
+  document.fonts.load('16px "Merriweather"', 'Report font check'),
+  document.fonts.ready
+]);
+const chart = echarts.init(document.getElementById('chart'));
+option.textStyle = {
+  ...option.textStyle,
+  fontFamily: '"Noto Sans SC", sans-serif'
+};
+chart.setOption(option);
+requestAnimationFrame(() => { window.__RENDER_READY__ = true; });
+```
+
+需要不同字形时，在 `title.textStyle`、`legend.textStyle`、`axisLabel` 或 `series.label` 中显式覆盖；不要假设 ECharts Canvas 会继承页面 CSS。
+
+Mermaid、SVG 和普通 DOM 也使用上述 CSS `font-family`；截图前等待 `document.fonts.ready`。
 
 完整字体信息见 `components/fonts.md`。
 
