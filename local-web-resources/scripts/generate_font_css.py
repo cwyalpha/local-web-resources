@@ -139,6 +139,11 @@ FONT_CONFIGS = [
             "https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkaimono-bold.css",
         ],
     },
+    {
+        "dir_name": "zhuque-fangsong",
+        "family": "Zhuque Fangsong",
+        "css_urls": [],
+    },
 ]
 
 
@@ -211,7 +216,8 @@ def main():
     # Write output
     output = FONTS_DIR / "fonts-chinese.css"
     content = "\n".join(all_sections)
-    output.write_text(content, encoding="utf-8")
+    with output.open("w", encoding="utf-8", newline="\r\n") as css_file:
+        css_file.write(content)
 
     print(f"\n{'=' * 60}")
     print(f"  Output: {output}")

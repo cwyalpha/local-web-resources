@@ -11,10 +11,10 @@ not replace or supersede any third-party license.
   workers, and webfonts. Copyright and license terms belong to their respective
   upstream projects. License files retained in individual library directories
   take precedence.
-- `web-resources-server/fonts/` contains Inter, Roboto, JetBrains Mono,
-  Noto Sans SC, Noto Serif SC, and LXGW WenKai font assets. These remain under
-  their upstream font licenses, including the SIL Open Font License where
-  applicable.
+- `web-resources-server/fonts/` contains Inter, Roboto, Merriweather,
+  JetBrains Mono, Noto Sans SC, Noto Serif SC, LXGW WenKai, and Zhuque
+  Fangsong font assets. These remain under their upstream font licenses,
+  including the SIL Open Font License where applicable.
 - `render-web-artifacts/assets/mermaid.min.js` is Mermaid and remains under
   the MIT License included in `render-web-artifacts/assets/mermaid.LICENSE`.
 

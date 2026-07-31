@@ -6758,3 +6758,15 @@
   font-display: swap;
   src: url('./lxgw-wenkai-mono/lxgwwenkaimono-bold-subset-119.woff2') format('woff2');
 }
+
+/* ================================================== */
+/* Zhuque Fangsong (1 rules) */
+/* ================================================== */
+
+@font-face {
+  font-family: 'Zhuque Fangsong';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./zhuque-fangsong/zhuque-fangsong-v0.212-regular.woff2') format('woff2');
+}

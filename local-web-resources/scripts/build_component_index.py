@@ -125,9 +125,11 @@ FONT_META = {
     "roboto": {"desc": "英文通用无衬线字体", "css_family": "Roboto"},
     "jetbrains-mono": {"desc": "代码等宽字体", "css_family": "JetBrains Mono"},
     "noto-sans-sc": {"desc": "思源黑体（替代黑体/微软雅黑）", "css_family": "Noto Sans SC"},
-    "noto-serif-sc": {"desc": "思源宋体（替代宋体，公文用）", "css_family": "Noto Serif SC"},
+    "noto-serif-sc": {"desc": "思源宋体（宋体风格的正式报告和长篇正文）", "css_family": "Noto Serif SC"},
     "lxgw-wenkai": {"desc": "霞鹜文楷（替代楷体）", "css_family": "LXGW WenKai"},
     "lxgw-wenkai-mono": {"desc": "霞鹜文楷等宽（代码用）", "css_family": "LXGW WenKai Mono"},
+    "zhuque-fangsong": {"desc": "朱雀仿宋 v0.212 预览版（公文、正式报告仿宋正文）", "css_family": "Zhuque Fangsong"},
+    "merriweather": {"desc": "英文正文衬线字体", "css_family": "Merriweather"},
 }
 
 # Only verified browser entrypoints are recommended. Everything else remains
@@ -687,9 +689,11 @@ def main():
 
     font_lines.append("\n**推荐组合**:")
     font_lines.append("```css")
-    font_lines.append("body { font-family: 'Noto Sans SC', 'Inter', sans-serif; }  /* 通用 */")
-    font_lines.append("body { font-family: 'Noto Serif SC', 'Georgia', serif; }    /* 公文 */")
-    font_lines.append("code { font-family: 'JetBrains Mono', monospace; }          /* 代码 */")
+    font_lines.append("body { font-family: 'Noto Sans SC', 'Inter', sans-serif; }                 /* 通用界面 */")
+    font_lines.append("body { font-family: 'Noto Serif SC', 'Merriweather', serif; }              /* 正式报告 */")
+    font_lines.append(".fangsong { font-family: 'Zhuque Fangsong', 'Noto Serif SC', serif; }      /* 仿宋正文 */")
+    font_lines.append(".literary { font-family: 'LXGW WenKai', 'Noto Serif SC', serif; }          /* 文艺/楷体 */")
+    font_lines.append("code { font-family: 'JetBrains Mono', 'LXGW WenKai Mono', monospace; }     /* 代码 */")
     font_lines.append("```")
 
     (components_dir / "fonts.md").write_text("\n".join(font_lines) + "\n", encoding="utf-8")
