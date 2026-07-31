@@ -1,0 +1,167 @@
+{
+  "安徽": {
+    "pinyin": "anhui",
+    "js": "province/anhui.js",
+    "json": "json/anhui.json"
+  },
+  "澳门": {
+    "pinyin": "aomen",
+    "js": "province/aomen.js",
+    "json": "json/aomen.json"
+  },
+  "北京": {
+    "pinyin": "beijing",
+    "js": "province/beijing.js",
+    "json": "json/beijing.json"
+  },
+  "重庆": {
+    "pinyin": "chongqing",
+    "js": "province/chongqing.js",
+    "json": "json/chongqing.json"
+  },
+  "福建": {
+    "pinyin": "fujian",
+    "js": "province/fujian.js",
+    "json": "json/fujian.json"
+  },
+  "甘肃": {
+    "pinyin": "gansu",
+    "js": "province/gansu.js",
+    "json": "json/gansu.json"
+  },
+  "广东": {
+    "pinyin": "guangdong",
+    "js": "province/guangdong.js",
+    "json": "json/guangdong.json"
+  },
+  "广西": {
+    "pinyin": "guangxi",
+    "js": "province/guangxi.js",
+    "json": "json/guangxi.json"
+  },
+  "贵州": {
+    "pinyin": "guizhou",
+    "js": "province/guizhou.js",
+    "json": "json/guizhou.json"
+  },
+  "海南": {
+    "pinyin": "hainan",
+    "js": "province/hainan.js",
+    "json": "json/hainan.json"
+  },
+  "河北": {
+    "pinyin": "hebei",
+    "js": "province/hebei.js",
+    "json": "json/hebei.json"
+  },
+  "黑龙江": {
+    "pinyin": "heilongjiang",
+    "js": "province/heilongjiang.js",
+    "json": "json/heilongjiang.json"
+  },
+  "河南": {
+    "pinyin": "henan",
+    "js": "province/henan.js",
+    "json": "json/henan.json"
+  },
+  "湖北": {
+    "pinyin": "hubei",
+    "js": "province/hubei.js",
+    "json": "json/hubei.json"
+  },
+  "湖南": {
+    "pinyin": "hunan",
+    "js": "province/hunan.js",
+    "json": "json/hunan.json"
+  },
+  "江苏": {
+    "pinyin": "jiangsu",
+    "js": "province/jiangsu.js",
+    "json": "json/jiangsu.json"
+  },
+  "江西": {
+    "pinyin": "jiangxi",
+    "js": "province/jiangxi.js",
+    "json": "json/jiangxi.json"
+  },
+  "吉林": {
+    "pinyin": "jilin",
+    "js": "province/jilin.js",
+    "json": "json/jilin.json"
+  },
+  "辽宁": {
+    "pinyin": "liaoning",
+    "js": "province/liaoning.js",
+    "json": "json/liaoning.json"
+  },
+  "内蒙古": {
+    "pinyin": "neimenggu",
+    "js": "province/neimenggu.js",
+    "json": "json/neimenggu.json"
+  },
+  "宁夏": {
+    "pinyin": "ningxia",
+    "js": "province/ningxia.js",
+    "json": "json/ningxia.json"
+  },
+  "青海": {
+    "pinyin": "qinghai",
+    "js": "province/qinghai.js",
+    "json": "json/qinghai.json"
+  },
+  "陕西": {
+    "pinyin": "shaanxi",
+    "js": "province/shaanxi.js",
+    "json": "json/shaanxi.json"
+  },
+  "山东": {
+    "pinyin": "shandong",
+    "js": "province/shandong.js",
+    "json": "json/shandong.json"
+  },
+  "上海": {
+    "pinyin": "shanghai",
+    "js": "province/shanghai.js",
+    "json": "json/shanghai.json"
+  },
+  "山西": {
+    "pinyin": "shanxi",
+    "js": "province/shanxi.js",
+    "json": "json/shanxi.json"
+  },
+  "四川": {
+    "pinyin": "sichuan",
+    "js": "province/sichuan.js",
+    "json": "json/sichuan.json"
+  },
+  "天津": {
+    "pinyin": "tianjin",
+    "js": "province/tianjin.js",
+    "json": "json/tianjin.json"
+  },
+  "香港": {
+    "pinyin": "xianggang",
+    "js": "province/xianggang.js",
+    "json": "json/xianggang.json"
+  },
+  "新疆": {
+    "pinyin": "xinjiang",
+    "js": "province/xinjiang.js",
+    "json": "json/xinjiang.json"
+  },
+  "西藏": {
+    "pinyin": "xizang",
+    "js": "province/xizang.js",
+    "json": "json/xizang.json"
+  },
+  "云南": {
+    "pinyin": "yunnan",
+    "js": "province/yunnan.js",
+    "json": "json/yunnan.json"
+  },
+  "浙江": {
+    "pinyin": "zhejiang",
+    "js": "province/zhejiang.js",
+    "json": "json/zhejiang.json"
+  }
+}

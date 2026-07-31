@@ -1,0 +1,173 @@
+:root {
+  color-scheme: light;
+  --page-bg: #f3f4f6;
+  --paper-bg: #ffffff;
+  --text: #1f2937;
+  --muted: #64748b;
+  --border: #d7dee8;
+  --accent: #2563eb;
+  font-family: "Noto Sans CJK SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #111827;
+  --paper-bg: #18212f;
+  --text: #e5e7eb;
+  --muted: #a9b6c8;
+  --border: #39475a;
+  --accent: #60a5fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+body {
+  padding: 32px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.markdown-body {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 52px 64px;
+  background: var(--paper-bg);
+  border-radius: 10px;
+  box-shadow: 0 10px 35px rgb(15 23 42 / 10%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.35;
+  break-after: avoid;
+}
+
+h1 {
+  margin-top: 0;
+  padding-bottom: 0.35em;
+  border-bottom: 2px solid var(--border);
+}
+
+h2 {
+  margin-top: 1.8em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--border);
+}
+
+a {
+  color: var(--accent);
+}
+
+img,
+svg,
+canvas {
+  max-width: 100%;
+}
+
+figure,
+table,
+pre,
+blockquote,
+.mermaid,
+.echarts-artifact {
+  break-inside: avoid;
+}
+
+table {
+  width: 100%;
+  margin: 1.2em 0;
+  border-collapse: collapse;
+  font-size: 0.94em;
+}
+
+th,
+td {
+  padding: 0.6em 0.75em;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: color-mix(in srgb, var(--paper-bg) 86%, var(--accent));
+}
+
+pre,
+code {
+  font-family: "JetBrains Mono", "Noto Sans Mono CJK SC", monospace;
+}
+
+code {
+  padding: 0.12em 0.3em;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--paper-bg) 88%, var(--muted));
+}
+
+pre {
+  overflow: auto;
+  padding: 1em 1.15em;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper-bg) 92%, #64748b);
+  line-height: 1.55;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+}
+
+blockquote {
+  margin-left: 0;
+  padding: 0.2em 1em;
+  border-left: 4px solid var(--accent);
+  color: var(--muted);
+}
+
+.mermaid,
+.echarts-artifact {
+  width: 100%;
+  min-height: 360px;
+  margin: 1.4em 0;
+  display: grid;
+  place-items: center;
+}
+
+.page-break {
+  break-before: page;
+}
+
+@media print {
+  @page {
+    margin: 0;
+  }
+
+  html,
+  body {
+    background: #ffffff;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .markdown-body {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

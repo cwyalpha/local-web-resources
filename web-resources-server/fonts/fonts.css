@@ -1,0 +1,147 @@
+/*
+ * fonts.css - 统一的 @font-face 字体定义
+ * 
+ * 使用方法：在 HTML 的 <head> 中引入此文件
+ * <link rel="stylesheet" href="路径/fonts/fonts.css">
+ *
+ * 然后在 CSS 中使用 font-family:
+ *   中文正文（黑体）: font-family: 'Noto Sans SC', sans-serif;
+ *   中文正文（宋体）: font-family: 'Noto Serif SC', serif;
+ *   中文楷体:         font-family: 'LXGW WenKai', serif;
+ *   中文楷体等宽:     font-family: 'LXGW WenKai Mono', monospace;
+ *   英文 UI:          font-family: 'Inter', sans-serif;
+ *   英文通用:         font-family: 'Roboto', sans-serif;
+ *   代码等宽:         font-family: 'JetBrains Mono', monospace;
+ *
+ * 推荐组合（办公/公文场景）:
+ *   正文: font-family: 'Noto Sans SC', 'Inter', sans-serif;
+ *   标题: font-family: 'Noto Sans SC', 'Inter', sans-serif; font-weight: 700;
+ *   公文: font-family: 'Noto Serif SC', serif;
+ *   代码: font-family: 'JetBrains Mono', 'LXGW WenKai Mono', monospace;
+ */
+
+/* ============================================================
+ * Inter - 英文 UI 无衬线字体
+ * ============================================================ */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./inter/inter-latin-400-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./inter/inter-latin-500-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./inter/inter-latin-600-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./inter/inter-latin-700-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ============================================================
+ * Roboto - 英文通用无衬线字体
+ * ============================================================ */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./roboto/roboto-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./roboto/roboto-latin-500-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./roboto/roboto-latin-700-normal.woff2') format('woff2');
+}
+
+/* ============================================================
+ * JetBrains Mono - 代码等宽字体
+ * ============================================================ */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./jetbrains-mono/jetbrains-mono-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./jetbrains-mono/jetbrains-mono-latin-700-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./jetbrains-mono/jetbrains-mono-latin-400-italic.woff2') format('woff2');
+}
+
+/* ============================================================
+ * 中文字体 (Noto Sans SC, Noto Serif SC, LXGW WenKai, LXGW WenKai Mono)
+ * 所有中文字体的 @font-face 声明（含 unicode-range 子集加载）
+ * 定义在 fonts-chinese.css 中（约 792 条规则）
+ * ============================================================ */
+@import url('./fonts-chinese.css');
+
+/* ============================================================
+ * 便捷工具类
+ * ============================================================ */
+
+/* 字体工具类 */
+.font-sans-cn { font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif; }
+.font-serif-cn { font-family: 'Noto Serif SC', 'Georgia', serif; }
+.font-kai-cn { font-family: 'LXGW WenKai', 'KaiTi', serif; }
+.font-mono { font-family: 'JetBrains Mono', 'LXGW WenKai Mono', 'Consolas', monospace; }
+.font-ui { font-family: 'Inter', 'Roboto', -apple-system, sans-serif; }
+
+/* 推荐的基础样式 */
+.doc-body {
+  font-family: 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+}
+
+.doc-formal {
+  font-family: 'Noto Serif SC', 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #1a1a1a;
+}

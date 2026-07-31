@@ -1,0 +1,32 @@
+# This repository intentionally publishes only the three directories below
+# plus the root documentation and license files.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/THIRD_PARTY_NOTICES.md
+!/local-web-resources/
+!/local-web-resources/**
+!/web-resources-server/
+!/web-resources-server/**
+!/render-web-artifacts/
+!/render-web-artifacts/**
+
+# Local metadata and generated test artifacts
+**/.DS_Store
+/Dockerfile.opencode
+/node_modules/
+/package.json
+/package-lock.json
+/*.zip
+/*.html
+/*.lnk
+/opencode-docx-test/
+
+# Local-only tests and fixtures
+/local-web-resources/scripts/start_test_server.py
+/render-web-artifacts/scripts/smoke-test.mjs
+/web-resources-server/test-data/
+/web-resources-server/libs/editors/codemirror/addon/mode/multiplex_test.min.js
+/web-resources-server/libs/layout/gridstack.js/vitest.config.min.js
+/web-resources-server/libs/layout/gridstack.js/vitest.setup.min.js
