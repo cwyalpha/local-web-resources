@@ -7,18 +7,24 @@
  * 然后在 CSS 中使用 font-family:
  *   中文正文（黑体）: font-family: 'Noto Sans SC', sans-serif;
  *   中文正文（宋体）: font-family: 'Noto Serif SC', serif;
+ *   中文仿宋（v0.212 预览版）: font-family: 'Zhuque Fangsong', serif;
  *   中文楷体:         font-family: 'LXGW WenKai', serif;
  *   中文楷体等宽:     font-family: 'LXGW WenKai Mono', monospace;
  *   英文 UI:          font-family: 'Inter', sans-serif;
  *   英文通用:         font-family: 'Roboto', sans-serif;
+ *   英文衬线正文:     font-family: 'Merriweather', serif;
  *   代码等宽:         font-family: 'JetBrains Mono', monospace;
  *
  * 推荐组合（办公/公文场景）:
  *   正文: font-family: 'Noto Sans SC', 'Inter', sans-serif;
  *   标题: font-family: 'Noto Sans SC', 'Inter', sans-serif; font-weight: 700;
- *   公文: font-family: 'Noto Serif SC', serif;
+ *   报告: font-family: 'Noto Serif SC', 'Merriweather', serif;
+ *   仿宋: font-family: 'Zhuque Fangsong', 'Noto Serif SC', serif;
  *   代码: font-family: 'JetBrains Mono', 'LXGW WenKai Mono', monospace;
  */
+
+/* 中文字体声明必须先导入；CSS 要求 @import 位于其他样式规则之前。 */
+@import url('./fonts-chinese.css');
 
 /* ============================================================
  * Inter - 英文 UI 无衬线字体
@@ -114,11 +120,39 @@
 }
 
 /* ============================================================
- * 中文字体 (Noto Sans SC, Noto Serif SC, LXGW WenKai, LXGW WenKai Mono)
- * 所有中文字体的 @font-face 声明（含 unicode-range 子集加载）
- * 定义在 fonts-chinese.css 中（约 792 条规则）
+ * Merriweather - 英文正文衬线字体
  * ============================================================ */
-@import url('./fonts-chinese.css');
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./merriweather/merriweather-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./merriweather/merriweather-latin-400-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./merriweather/merriweather-latin-700-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./merriweather/merriweather-latin-700-italic.woff2') format('woff2');
+}
 
 /* ============================================================
  * 便捷工具类
@@ -126,10 +160,12 @@
 
 /* 字体工具类 */
 .font-sans-cn { font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif; }
-.font-serif-cn { font-family: 'Noto Serif SC', 'Georgia', serif; }
+.font-serif-cn { font-family: 'Noto Serif SC', 'Merriweather', 'Georgia', serif; }
+.font-fangsong-cn { font-family: 'Zhuque Fangsong', 'Noto Serif SC', serif; }
 .font-kai-cn { font-family: 'LXGW WenKai', 'KaiTi', serif; }
 .font-mono { font-family: 'JetBrains Mono', 'LXGW WenKai Mono', 'Consolas', monospace; }
 .font-ui { font-family: 'Inter', 'Roboto', -apple-system, sans-serif; }
+.font-serif-en { font-family: 'Merriweather', 'Georgia', serif; }
 
 /* 推荐的基础样式 */
 .doc-body {
@@ -140,7 +176,14 @@
 }
 
 .doc-formal {
-  font-family: 'Noto Serif SC', 'Georgia', 'Times New Roman', serif;
+  font-family: 'Noto Serif SC', 'Merriweather', 'Georgia', 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #1a1a1a;
+}
+
+.doc-fangsong {
+  font-family: 'Zhuque Fangsong', 'Noto Serif SC', serif;
   font-size: 16px;
   line-height: 2;
   color: #1a1a1a;

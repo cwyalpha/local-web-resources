@@ -3,8 +3,8 @@
   "description": "Local HTTP web resource server inventory",
   "summary": {
     "library_count": 84,
-    "font_family_count": 7,
-    "total_size_mb": 159.8
+    "font_family_count": 9,
+    "total_size_mb": 164.6
   },
   "libraries": [
     {
@@ -943,6 +943,15 @@
       ]
     },
     {
+      "name": "merriweather",
+      "directory": "fonts/merriweather",
+      "file_count": 4,
+      "total_size_kb": 196.3,
+      "extensions": [
+        ".woff2"
+      ]
+    },
+    {
       "name": "noto-sans-sc",
       "directory": "fonts/noto-sans-sc",
       "file_count": 204,
@@ -965,6 +974,15 @@
       "directory": "fonts/roboto",
       "file_count": 12,
       "total_size_kb": 226.6,
+      "extensions": [
+        ".woff2"
+      ]
+    },
+    {
+      "name": "zhuque-fangsong",
+      "directory": "fonts/zhuque-fangsong",
+      "file_count": 1,
+      "total_size_kb": 4692.7,
       "extensions": [
         ".woff2"
       ]

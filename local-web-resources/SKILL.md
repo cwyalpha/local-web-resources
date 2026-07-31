@@ -87,9 +87,14 @@ BASE_URL = http://web-resources.example:8080
 统一入口见“高频入口速查”。
 
 - 通用中文界面：`'Noto Sans SC', 'Inter', sans-serif`
-- 正式报告：`'Noto Serif SC', Georgia, serif`
+- 正式报告、长篇正文：`'Noto Serif SC', 'Merriweather', serif`
+- 公文仿宋、正式说明文字：`'Zhuque Fangsong', 'Noto Serif SC', serif`
+- 文艺、文化或楷体风格：`'LXGW WenKai', 'Noto Serif SC', serif`
+- 纯英文衬线正文：`'Merriweather', Georgia, serif`
 - 中文等宽内容：`'LXGW WenKai Mono', 'JetBrains Mono', monospace`
 - 纯代码：`'JetBrains Mono', monospace`
+
+不要用 Zhuque Fangsong 代替所有中文正文；它适合仿宋语义。不要为同一文本同时堆叠多个风格相近的首选字体。ECharts、Mermaid、SVG 和 Canvas 中的中文字体名称也使用上述 CSS `font-family`，并在渲染或截图前等待 `document.fonts.ready`。
 
 完整字体信息见 `components/fonts.md`。
 
