@@ -18,8 +18,11 @@ description: 使用真实 Chromium 将 HTML、网页、Markdown、Mermaid 和 EC
 
 ## 快速命令
 
+执行前，根据当前加载的这个 `SKILL.md` 的实际位置设置一次 `SKILL_DIR`。它必须指向包含本文件的 Skill 根目录；不要假设固定安装目录，也不要在命令中保留下方占位符。
+
 ```bash
-SKILL_DIR=/opt/agent/skills/render-web-artifacts
+SKILL_DIR="<当前 render-web-artifacts/SKILL.md 所在目录>"
+test -f "$SKILL_DIR/scripts/render.mjs"
 
 # HTML 整页
 node "$SKILL_DIR/scripts/render.mjs" html \
@@ -39,8 +42,6 @@ node "$SKILL_DIR/scripts/render.mjs" mermaid \
 node "$SKILL_DIR/scripts/render.mjs" echarts \
   --input option.json --output chart.png --width 1200 --height 675
 ```
-
-在 Skill 不位于 `/opt/agent/skills` 时，将 `SKILL_DIR` 改成实际绝对路径。
 
 ## 关键规则
 
