@@ -1,4 +1,0 @@
-interface:
-  display_name: "Web Artifact Renderer"
-  short_description: "Render HTML, Markdown, Mermaid, and ECharts to images or PDF"
-  default_prompt: "Use $render-web-artifacts to render this HTML or chart as a desktop PNG or PDF."
