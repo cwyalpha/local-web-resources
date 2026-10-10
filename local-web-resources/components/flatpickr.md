@@ -18,10 +18,13 @@
 
 - 设置 locale: 'zh' 时必须加载；JS（after-flatpickr）：`{BASE_URL}/libs/ui-components/flatpickr/l10n/zh.min.js`
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## 目录
 
 - [CSS 文件](#css-文件)
 - [JS 文件](#js-文件)
+- [其他文件](#其他文件)
 
 ## CSS 文件
 
@@ -61,3 +64,7 @@
 - `{BASE_URL}/libs/ui-components/flatpickr/esm/l10n/fa.min.js` (0.7 KB)
 - `{BASE_URL}/libs/ui-components/flatpickr/esm/l10n/fi.min.js` (0.6 KB)
 - ……其余 135 个文件可通过 `components/index.json` 或服务器目录检索。
+
+## 其他文件
+
+- `{BASE_URL}/libs/ui-components/flatpickr/LICENSE.md` (1.1 KB)

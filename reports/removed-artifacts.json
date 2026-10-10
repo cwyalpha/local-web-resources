@@ -1,0 +1,18 @@
+[
+  {
+    "path": "libs/editors/codemirror/addon/mode/multiplex_test.min.js",
+    "reason": "上游测试文件，不是运行时资源"
+  },
+  {
+    "path": "libs/layout/gridstack.js/vitest.config.min.js",
+    "reason": "上游测试配置，不是浏览器入口"
+  },
+  {
+    "path": "libs/layout/gridstack.js/vitest.setup.min.js",
+    "reason": "上游测试配置，不是浏览器入口"
+  },
+  {
+    "path": "libs/utils/xlsx/xlsx.extendscript.min.js",
+    "reason": "Adobe ExtendScript 0.18.5 构建；不适用于浏览器，官方 0.20.3 包未包含"
+  }
+]

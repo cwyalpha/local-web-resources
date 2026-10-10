@@ -22,7 +22,7 @@ cp -R render-web-artifacts /opt/agent/skills/
 部署资源服务器后，修改 `local-web-resources/SKILL.md` 开头唯一的配置行：
 
 ```text
-BASE_URL = http://web-resources.example:8080
+BASE_URL = https://web-resources.example/resources
 ```
 
 将示例域名替换为 Agent 和生成页面实际可访问的 HTTP 或 HTTPS 地址。组件文档中的 `{BASE_URL}` 无需逐个修改。
@@ -61,3 +61,18 @@ node render-web-artifacts/scripts/render.mjs markdown \
 本仓库自行编写的 Skill、脚本、模板和文档采用 MIT License。`web-resources-server/libs/`、`web-resources-server/fonts/` 以及随 Skill 分发的第三方 bundle 不受本仓库 MIT License 重新授权，仍遵循各自上游许可证。详见 `THIRD_PARTY_NOTICES.md` 和资源目录中随附的许可证文件。
 
 Handsontable、Intro.js、fullPage.js 和 TinyMCE 已保留用于兼容既有环境，但属于 `license-gated` 资源；使用或再分发前必须自行确认适用的开源或商业许可。
+
+## 配套资源更新
+
+当前配套资源为 90 个库、11 个字体家族，包含 Reveal.js / impress.js HTML 演示、数据分析、中文字体与图标。常用选型仅作参考，Agent 可根据任务自主组合已验证资源。
+
+模板位于 `web-resources-server/templates/`，使用前将 `{BASE_URL}` 替换为实际资源地址。版本来源与验证结果见 [升级与核对报告](reports/升级与核对报告.md)，来源哈希由 `web-resources-server/resources.lock.json` 记录。
+
+在仓库根目录执行：
+
+```bash
+python local-web-resources/scripts/validate_resources.py --node-check
+python local-web-resources/scripts/validate_bundle.py
+```
+
+浏览器回归脚本为 `local-web-resources/scripts/browser_check.cjs`，维护环境需提供 Playwright 和 Chrome；静态资源部署不需要 npm 构建。

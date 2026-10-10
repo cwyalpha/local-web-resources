@@ -6770,3 +6770,8 @@
   font-display: swap;
   src: url('./zhuque-fangsong/zhuque-fangsong-v0.212-regular.woff2') format('woff2');
 }
+
+/* Additional display fonts */
+@font-face { font-family: 'Smiley Sans'; src: url('./smiley-sans/SmileySans-Oblique.woff2') format('woff2'); font-weight: 400; font-style: oblique; font-display: swap; }
+@font-face { font-family: 'Resource Han Rounded CN'; src: url('./resource-han-rounded/ResourceHanRoundedCN-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Resource Han Rounded CN'; src: url('./resource-han-rounded/ResourceHanRoundedCN-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }

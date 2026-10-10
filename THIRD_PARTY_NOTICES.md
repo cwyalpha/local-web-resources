@@ -13,7 +13,7 @@ not replace or supersede any third-party license.
   take precedence.
 - `web-resources-server/fonts/` contains Inter, Roboto, Merriweather,
   JetBrains Mono, Noto Sans SC, Noto Serif SC, LXGW WenKai, and Zhuque
-  Fangsong font assets. These remain under their upstream font licenses,
+  Fangsong, Smiley Sans, and Resource Han Rounded CN font assets. These remain under their upstream font licenses,
   including the SIL Open Font License where applicable.
 - `render-web-artifacts/assets/mermaid.min.js` is Mermaid and remains under
   the MIT License included in `render-web-artifacts/assets/mermaid.LICENSE`.
@@ -36,3 +36,7 @@ by default by the Skill:
 
 Downstream users are responsible for confirming that their use, modification,
 deployment, and redistribution comply with the applicable upstream terms.
+
+## Additional resources
+
+Arquero (BSD-3-Clause), simple-statistics (ISC), and Phosphor Icons (MIT) include their package LICENSE files. Smiley Sans v2.0.1 and Resource Han Rounded v0.990 include upstream SIL OFL 1.1 texts. Rounded font WOFF2 files retain the complete upstream glyph set. Pinned sources and archive checksums are recorded in `reports/additional-resources.json`.

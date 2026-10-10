@@ -10,6 +10,8 @@
 
 未验证普通 `<script>` / `<link>` 入口。仅在明确需要此库时，从下方文件清单选择并做浏览器验证。
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## CSS 文件
 
 - `{BASE_URL}/libs/layout/gridstack.js/gridstack.min.css` (3.5 KB)
@@ -30,3 +32,7 @@
 - `{BASE_URL}/libs/layout/gridstack.js/gridstack.min.js` (40.4 KB)
 - `{BASE_URL}/libs/layout/gridstack.js/types.min.js` (0.5 KB)
 - `{BASE_URL}/libs/layout/gridstack.js/utils.min.js` (7.3 KB)
+
+## 其他文件
+
+- `{BASE_URL}/libs/layout/gridstack.js/LICENSE` (1.1 KB)

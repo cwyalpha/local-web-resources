@@ -1,6 +1,6 @@
 # echarts
 
-- 版本：6.0.0
+- 版本：6.1.0
 - 分类：数据可视化
 - 推荐级别：default
 - 状态：available
@@ -17,6 +17,8 @@
 
 - 使用中国地图时；JS（after-echarts）：`{BASE_URL}/libs/charts/echarts/map/china.js`
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## 目录
 
 - [JS 文件](#js-文件)
@@ -24,20 +26,20 @@
 
 ## JS 文件
 
-- `{BASE_URL}/libs/charts/echarts/echarts.common.min.js` (688.6 KB)
-- `{BASE_URL}/libs/charts/echarts/echarts.esm.js` (3250.4 KB)
-- `{BASE_URL}/libs/charts/echarts/echarts.esm.min.js` (1091.5 KB)
-- `{BASE_URL}/libs/charts/echarts/echarts.js` (3613.2 KB)
-- `{BASE_URL}/libs/charts/echarts/echarts.min.js` (1091.7 KB)
-- `{BASE_URL}/libs/charts/echarts/echarts.simple.min.js` (481.6 KB)
+- `{BASE_URL}/libs/charts/echarts/echarts.common.min.js` (698.3 KB)
+- `{BASE_URL}/libs/charts/echarts/echarts.esm.js` (3384.0 KB)
+- `{BASE_URL}/libs/charts/echarts/echarts.esm.min.js` (1095.4 KB)
+- `{BASE_URL}/libs/charts/echarts/echarts.js` (3757.1 KB)
+- `{BASE_URL}/libs/charts/echarts/echarts.min.js` (1095.6 KB)
+- `{BASE_URL}/libs/charts/echarts/echarts.simple.min.js` (488.6 KB)
 - `{BASE_URL}/libs/charts/echarts/i18n/langEN-obj.js` (4.9 KB)
-- `{BASE_URL}/libs/charts/echarts/i18n/langEN-obj.min.js` (2.2 KB)
+- `{BASE_URL}/libs/charts/echarts/i18n/langEN-obj.min.js` (4.9 KB)
 - `{BASE_URL}/libs/charts/echarts/i18n/langEN.js` (4.9 KB)
-- `{BASE_URL}/libs/charts/echarts/i18n/langEN.min.js` (2.2 KB)
+- `{BASE_URL}/libs/charts/echarts/i18n/langEN.min.js` (4.9 KB)
 - `{BASE_URL}/libs/charts/echarts/i18n/langZH-obj.js` (5.0 KB)
-- `{BASE_URL}/libs/charts/echarts/i18n/langZH-obj.min.js` (2.3 KB)
+- `{BASE_URL}/libs/charts/echarts/i18n/langZH-obj.min.js` (5.0 KB)
 - `{BASE_URL}/libs/charts/echarts/i18n/langZH.js` (4.9 KB)
-- `{BASE_URL}/libs/charts/echarts/i18n/langZH.min.js` (2.3 KB)
+- `{BASE_URL}/libs/charts/echarts/i18n/langZH.min.js` (4.9 KB)
 - `{BASE_URL}/libs/charts/echarts/map/china.js` (569.0 KB)
 - `{BASE_URL}/libs/charts/echarts/map/province/anhui.js` (124.5 KB)
 - `{BASE_URL}/libs/charts/echarts/map/province/aomen.js` (13.3 KB)
@@ -48,6 +50,7 @@
 
 ## 其他文件
 
+- `{BASE_URL}/libs/charts/echarts/LICENSE` (11.7 KB)
 - `{BASE_URL}/libs/charts/echarts/map/json/anhui.json` (124.3 KB)
 - `{BASE_URL}/libs/charts/echarts/map/json/aomen.json` (13.1 KB)
 - `{BASE_URL}/libs/charts/echarts/map/json/beijing.json` (98.7 KB)
@@ -59,5 +62,4 @@
 - `{BASE_URL}/libs/charts/echarts/map/json/guangdong.json` (188.4 KB)
 - `{BASE_URL}/libs/charts/echarts/map/json/guangxi.json` (164.0 KB)
 - `{BASE_URL}/libs/charts/echarts/map/json/guizhou.json` (127.1 KB)
-- `{BASE_URL}/libs/charts/echarts/map/json/hainan.json` (33.3 KB)
-- ……其余 24 个文件可通过 `components/index.json` 或服务器目录检索。
+- ……其余 26 个文件可通过 `components/index.json` 或服务器目录检索。

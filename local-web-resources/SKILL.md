@@ -1,35 +1,40 @@
 ---
 name: local-web-resources
-description: 为无后端支撑的内网/离线静态 HTML 页面选择并引用本地 HTTP 前端资源。用于创建或修改仪表盘、报告、多页面静态站点、图表、表格、表单、静态 JSON 数据页面、中文字体和图标；禁止引用公网 CDN，并从本 Skill 的组件文档选择已验证的浏览器入口。
+description: 为无后端支撑的内网/离线静态 HTML 页面选择并引用本地 HTTP 前端资源。用于创建或修改仪表盘、报告、HTML 幻灯片、多页面静态站点、图表、表格、表单、静态 JSON 数据页面、中文字体和图标；禁止引用公网 CDN，并从本 Skill 的组件文档选择已验证的浏览器入口。
 ---
 
 # 内网静态页面资源
 
 ## 配置
 
-维护者在部署到内网前只修改下一行：
-
 ```text
-BASE_URL = http://web-resources.example:8080
+BASE_URL = https://web-resources.example/resources
 ```
 
-所有组件文档用 `{BASE_URL}` 表示该地址。生成 HTML 时必须替换成上面的完整地址；禁止在交付文件中留下 `{BASE_URL}`、`RESOURCE_SERVER` 等占位符。如果本行仍是示例地址且无法确定真实地址，先向用户确认。
+上面的 `.example` 域名仅用于公开示例。部署前，将此处单点配置替换为 Agent 和最终浏览器均可访问的实际资源地址；用户提供的真实 `BASE_URL` 优先。如果配置仍是示例且用户未提供实际地址，先确认实际地址，再生成成品页面。
+
+所有组件文档用 `{BASE_URL}` 表示该地址。生成 HTML 时必须替换成已确认的实际完整地址；禁止在交付文件中留下示例域名、`{BASE_URL}`、`RESOURCE_SERVER` 等占位符。
 
 ## 工作流
 
-1. 根据需求从“默认选型”选择最少的库，不要因为服务器已有资源就全部引用。
+1. 根据用户目标、内容特点和视觉风格选择合适的资源。“常用选型参考”提供起点，不是白名单；可以从完整资源目录自主选择并组合已验证的库，以实现所需的表现力和交互。不以库的数量最少为目标；兼顾效果、性能和维护成本，仅加载实际使用的资源，避免无意义的功能重复。
 2. 用户已提供真实 `BASE_URL` 且“高频入口速查”已覆盖需求时，直接生成页面；不要先用 `curl`、目录遍历或读取组件文档重复探测资源。只有需要可选入口、插件、主题或特殊初始化时，才读取 `components/{name}.md`。禁止根据文件名猜测 ESM、UMD、Worker 或插件入口。
-3. 高频入口不满足需求时，读取 `components/catalog.md` 查找条件库，再读取选中组件文档；专业/低频库必须明确匹配任务。
+3. 需要更多能力或视觉选择时，读取 `components/catalog.md`，再读取选中组件文档。推荐级别用于导航，不限制选择；无需等待用户点名，AI 可根据任务自主采用专业库。
 4. CSS 通常放在 `<head>`；普通经典脚本放在内容之后；遵循组件文档记录的 `head-defer`、依赖和加载顺序。
-5. 完成后检查：无公网 URL、无未替换占位符、无缺失路径、无控制台错误；在桌面视口验证主要交互，并检查布局无横向溢出、裁切或难看的强制换行。
+5. 完成后检查：无公网运行时资源 URL、无未替换占位符、无缺失路径、无控制台错误；在桌面视口验证主要交互，并检查布局无横向溢出、裁切或难看的强制换行。
 
-## 默认选型
+## 常用选型参考
 
-| 需求 | 默认资源 | 何时不用 |
+| 需求 | 常用资源 | 选型参考 |
 |---|---|---|
+| HTML 幻灯片、汇报、培训 | Reveal.js | 空间缩放叙事才用 impress.js；按需读 `references/presentations.md` |
+| 数据统计、回归、聚类 | echarts-stat + ECharts | 简单汇总直接使用原生 JS |
+| 表格数据整理、关联、透视 | Arquero | 简单数据直接使用原生 JS；Arrow 文件需额外依赖，本包未配套 |
+| 独立统计计算 | simple-statistics | 已有图表统计能力足够时可复用 |
+| 中文词云 | wordcloud2 | 需先提供词语及权重，不负责分词 |
 | 页面布局、按钮、弹窗、原生选框 | Bootstrap | 极简文档可只写少量 CSS |
-| 稳定 SVG 图标 | Lucide | 已统一使用 Bootstrap Icons 的旧页面 |
-| 图表、仪表盘、中国地图 | ECharts | 用户明确指定 Chart.js 等 |
+| 图标 | Lucide；多粗细或双色风格可用 Phosphor | 按页面风格选择，也可使用目录中其他图标库 |
+| 图表、仪表盘、中国地图 | ECharts | 可根据图表类型、风格与交互选择 Chart.js、Plotly 等 |
 | 自定义 SVG、复杂数据驱动图形 | D3 | 普通业务图表继续使用 ECharts |
 | 流程图、时序图、甘特图 | Mermaid | 需要高度定制交互时再用 D3/图编辑器 |
 | 搜索、排序、分页、筛选表格 | Tabulator | 仅有几十行数据时用原生表格；旧 jQuery 页面可用 DataTables |
@@ -40,11 +45,11 @@ BASE_URL = http://web-resources.example:8080
 | 模糊搜索 | Fuse.js | 精确筛选用原生数组方法 |
 | HTML 区域导出图片 | html-to-image | 复杂 Canvas 场景再考虑 html2canvas |
 | Markdown 渲染 | Marked + DOMPurify | 内容完全受信任时仍建议保留净化 |
-| 代码高亮 | highlight.js | 用户明确需要 Prism 插件体系 |
+| 代码高亮 | highlight.js | 需要 Prism 插件体系时可选 Prism |
 
 ## 高频入口速查
 
-下表地址已经验证。能满足任务时直接使用，不必再读取组件文档；不要因此把未使用的库全部引入。
+下表地址应与本配套包一致；实际内网连通性以部署复验为准。能满足任务时直接使用，不必再读取组件文档；不要因此把未使用的库全部引入。
 
 | 资源 | CSS / JS 入口 |
 |---|---|
@@ -89,6 +94,8 @@ BASE_URL = http://web-resources.example:8080
 - 正式报告、长篇正文：`'Noto Serif SC', 'Merriweather', serif`
 - 公文仿宋、正式说明文字：`'Zhuque Fangsong', 'Noto Serif SC', serif`
 - 文艺、文化或楷体风格：`'LXGW WenKai', 'Noto Serif SC', serif`
+- 封面与表现性标题：`'Smiley Sans', sans-serif`，使用 `font-style: oblique; font-weight: 400`，字体本身为倾斜设计。
+- 圆润风格页面：`'Resource Han Rounded CN', 'Noto Sans SC', sans-serif`，提供 400 和 700 字重。
 - 纯英文衬线正文：`'Merriweather', Georgia, serif`
 - 中文等宽内容：`'LXGW WenKai Mono', 'JetBrains Mono', monospace`
 - 纯代码：`'JetBrains Mono', monospace`
@@ -100,8 +107,7 @@ Canvas 不继承 `body` 的 CSS 字体，也不会因为字体稍后加载而自
 ```js
 window.__RENDER_READY__ = false;
 await Promise.all([
-  document.fonts.load('16px "Zhuque Fangsong"', '中文字体检查'),
-  document.fonts.load('16px "Merriweather"', 'Report font check'),
+  document.fonts.load('16px "Noto Sans SC"', '中文字体检查'),
   document.fonts.ready
 ]);
 const chart = echarts.init(document.getElementById('chart'));
@@ -121,6 +127,9 @@ Mermaid、SVG 和普通 DOM 也使用上述 CSS `font-family`；截图前等待 
 
 ## 进一步查阅
 
+- HTML 幻灯片、插件与图表生命周期：`references/presentations.md`
+- 图表统计和中文词云：`references/chart-analysis.md`
+- 配套更新和校验：`references/maintenance.md`
 - 全部资源及推荐级别：`components/catalog.md`
 - 机器索引：`components/index.json`
 - 静态 JSON、多页面、表单、图表和导出模式：`references/static-pages.md`

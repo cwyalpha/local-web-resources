@@ -1,4 +1,4 @@
-# This repository intentionally publishes only the three directories below
+# This repository publishes the paired Skills, resource server, and release reports
 # plus the root documentation and license files.
 /*
 !/.gitignore
@@ -11,6 +11,8 @@
 !/web-resources-server/**
 !/render-web-artifacts/
 !/render-web-artifacts/**
+!/reports/
+!/reports/**
 
 # Local metadata and generated test artifacts
 **/.DS_Store

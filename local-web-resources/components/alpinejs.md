@@ -1,6 +1,6 @@
 # alpinejs
 
-- 版本：3.15.12
+- 版本：3.17.4
 - 分类：JS 核心
 - 推荐级别：default
 - 状态：available
@@ -13,10 +13,12 @@
 
 - JS（head-defer）：`{BASE_URL}/libs/js-core/alpinejs/cdn.min.js`
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## JS 文件
 
-- `{BASE_URL}/libs/js-core/alpinejs/cdn.js` (110.6 KB)
-- `{BASE_URL}/libs/js-core/alpinejs/cdn.min.js` (45.3 KB)
+- `{BASE_URL}/libs/js-core/alpinejs/cdn.js` (133.7 KB)
+- `{BASE_URL}/libs/js-core/alpinejs/cdn.min.js` (54.6 KB)
 
 ## 其他文件
 

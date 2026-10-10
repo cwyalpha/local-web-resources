@@ -13,6 +13,8 @@
 - CSS（head）：`{BASE_URL}/libs/editors/codemirror/codemirror.min.css`
 - JS（body-end）：`{BASE_URL}/libs/editors/codemirror/codemirror.min.js`
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## 目录
 
 - [CSS 文件](#css-文件)

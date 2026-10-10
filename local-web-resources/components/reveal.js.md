@@ -2,13 +2,30 @@
 
 - 版本：5.2.1
 - 分类：布局
-- 推荐级别：specialized
+- 推荐级别：conditional
 - 状态：available
-- 说明：HTML 幻灯片/演示文稿。主题在 theme/ 下 (black, white, league, dracula 等)
+- 说明：HTML 幻灯片默认框架，支持备注、分步显示与 PDF 打印。
+- 浏览器全局：`Reveal`
+- 许可：MIT
+- 注意：完整用法见 ../references/presentations.md；插件按需加载，公式必须指定本地 KaTeX。
 
 ## 推荐入口
 
-未验证普通 `<script>` / `<link>` 入口。仅在明确需要此库时，从下方文件清单选择并做浏览器验证。
+- CSS（head）：`{BASE_URL}/libs/layout/reveal.js/reset.min.css`
+- CSS（head）：`{BASE_URL}/libs/layout/reveal.js/reveal.min.css`
+- CSS（head）：`{BASE_URL}/libs/layout/reveal.js/theme/white.min.css`
+- JS（body-end）：`{BASE_URL}/libs/layout/reveal.js/reveal.min.js`
+
+## 按需入口
+
+- Markdown 幻灯片；JS（after-reveal）：`{BASE_URL}/libs/layout/reveal.js/plugin/markdown/markdown.min.js`
+- 代码高亮；JS（after-reveal）：`{BASE_URL}/libs/layout/reveal.js/plugin/highlight/highlight.min.js`
+- 演讲者备注；JS（after-reveal）：`{BASE_URL}/libs/layout/reveal.js/plugin/notes/notes.min.js`
+- 搜索；JS（after-reveal）：`{BASE_URL}/libs/layout/reveal.js/plugin/search/search.min.js`
+- 局部放大；JS（after-reveal）：`{BASE_URL}/libs/layout/reveal.js/plugin/zoom/zoom.min.js`
+- 本地 KaTeX 公式；JS（after-reveal）：`{BASE_URL}/libs/layout/reveal.js/plugin/math/math.min.js`
+
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
 
 ## CSS 文件
 
@@ -19,16 +36,16 @@
 - `{BASE_URL}/libs/layout/reveal.js/theme/beige.min.css` (6.0 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/black-contrast.min.css` (6.5 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/black.min.css` (6.5 KB)
-- `{BASE_URL}/libs/layout/reveal.js/theme/blood.min.css` (5.7 KB)
+- `{BASE_URL}/libs/layout/reveal.js/theme/blood.min.css` (5.6 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/dracula.min.css` (5.5 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/fonts/league-gothic/league-gothic.min.css` (0.2 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/fonts/source-sans-pro/source-sans-pro.min.css` (1.1 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/league.min.css` (6.0 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/moon.min.css` (5.3 KB)
-- `{BASE_URL}/libs/layout/reveal.js/theme/night.min.css` (5.1 KB)
+- `{BASE_URL}/libs/layout/reveal.js/theme/night.min.css` (5.0 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/serif.min.css` (5.0 KB)
-- `{BASE_URL}/libs/layout/reveal.js/theme/simple.min.css` (5.1 KB)
-- `{BASE_URL}/libs/layout/reveal.js/theme/sky.min.css` (5.6 KB)
+- `{BASE_URL}/libs/layout/reveal.js/theme/simple.min.css` (5.0 KB)
+- `{BASE_URL}/libs/layout/reveal.js/theme/sky.min.css` (5.5 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/solarized.min.css` (5.1 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/white-contrast.min.css` (6.5 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/white.min.css` (6.5 KB)
@@ -75,3 +92,7 @@
 - `{BASE_URL}/libs/layout/reveal.js/theme/fonts/source-sans-pro/source-sans-pro-semibold.ttf` (278.0 KB)
 - `{BASE_URL}/libs/layout/reveal.js/theme/fonts/source-sans-pro/source-sans-pro-semibold.woff` (112.9 KB)
 - ……其余 3 个文件可通过 `components/index.json` 或服务器目录检索。
+
+## 其他文件
+
+- `{BASE_URL}/libs/layout/reveal.js/LICENSE` (1.1 KB)

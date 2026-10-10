@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>数据洞察 · HTML 演示模板</title>
+  <link rel="stylesheet" href="{BASE_URL}/fonts/fonts.css">
+  <link rel="stylesheet" href="{BASE_URL}/libs/layout/reveal.js/reset.min.css">
+  <link rel="stylesheet" href="{BASE_URL}/libs/layout/reveal.js/reveal.min.css">
+  <link rel="stylesheet" href="{BASE_URL}/libs/layout/reveal.js/theme/white.min.css">
+  <link rel="stylesheet" href="{BASE_URL}/libs/layout/reveal.js/plugin/highlight/monokai.min.css">
+  <link rel="stylesheet" href="{BASE_URL}/libs/js-core/katex/katex.min.css">
+  <link rel="stylesheet" href="{BASE_URL}/templates/presentation.css">
+</head>
+<body>
+  <!-- Add class="deck-dark" to body for the dark palette. All data below is illustrative. -->
+  <div class="reveal"><div class="slides">
+    <section>
+      <p class="eyebrow">RESEARCH / 2026</p><h1>从数据到行动</h1><div class="title-rule"></div>
+      <p>内网 HTML 演示模板</p><p class="muted">示例数据 · 方向键翻页 · Esc 总览 · S 备注 · F 全屏</p>
+      <aside class="notes">开场：说明演示目标与数据口径。当前数据仅作模板示例。</aside>
+    </section>
+    <section><p class="eyebrow">01 / CONTEXT</p><h2>把关键问题讲清楚</h2>
+      <div class="columns"><div class="card"><h3>观察</h3><p class="fragment">趋势是否稳定？</p><p class="fragment">变化来自哪里？</p></div>
+      <div class="card"><h3>行动</h3><p>先定义指标与边界，再用图表验证判断。</p></div></div>
+    </section>
+    <section><p class="eyebrow">02 / EVIDENCE</p><h2>增长趋势与回归分析</h2><div id="trend" class="chart" aria-label="月度数据与线性回归图"></div><p class="muted">示例数据；线性拟合仅用于解释趋势。</p></section>
+    <section><p class="eyebrow">03 / PROCESS</p><h2>从采集到反馈</h2><div class="mermaid">flowchart LR
+      A[明确问题] --> B[采集数据] --> C[分析验证] --> D[行动反馈]
+      D --> A</div></section>
+    <section data-markdown><textarea data-template>
+## 分析过程可复现
+
+```javascript
+const result = ecStat.regression('linear', data);
+chart.setOption({ series: [{ type: 'line', data: result.points }] });
+```
+
+模型示例：$ y = ax + b $
+    </textarea></section>
+    <section><p class="eyebrow">NEXT STEPS</p><h2>让结论进入下一步行动</h2><div class="title-rule"></div><p>确认负责人、时间与评价指标。</p><p class="muted">谢谢 · 欢迎讨论</p></section>
+  </div></div>
+  <div id="deck-status" class="deck-status" role="status"></div>
+  <script src="{BASE_URL}/libs/layout/reveal.js/reveal.min.js"></script>
+  <script src="{BASE_URL}/libs/layout/reveal.js/plugin/markdown/markdown.min.js"></script>
+  <script src="{BASE_URL}/libs/layout/reveal.js/plugin/highlight/highlight.min.js"></script>
+  <script src="{BASE_URL}/libs/layout/reveal.js/plugin/notes/notes.min.js"></script>
+  <script src="{BASE_URL}/libs/layout/reveal.js/plugin/search/search.min.js"></script>
+  <script src="{BASE_URL}/libs/layout/reveal.js/plugin/zoom/zoom.min.js"></script>
+  <script src="{BASE_URL}/libs/layout/reveal.js/plugin/math/math.min.js"></script>
+  <script src="{BASE_URL}/libs/charts/echarts/echarts.min.js"></script>
+  <script src="{BASE_URL}/libs/charts/echarts-stat/ecStat.min.js"></script>
+  <script src="{BASE_URL}/libs/charts/mermaid/mermaid.min.js"></script>
+  <script>
+  window.__RENDER_READY__ = false;
+  (async () => {
+    const printing = new URLSearchParams(location.search).has('print-pdf');
+    const dark = document.body.classList.contains('deck-dark');
+    const themeColor = dark ? '#eef5f9' : '#203341';
+    const font = '"Noto Sans SC", sans-serif';
+    // Disable automatic scanning synchronously, before any font-loading await.
+    mermaid.initialize({startOnLoad:false, theme:dark ? 'dark' : 'default', fontFamily:font});
+    const diagram=document.querySelector('.mermaid');
+    const diagramSource=diagram.textContent;
+    await document.fonts.load('28px "Noto Sans SC"', '从数据到行动增长趋势');
+    await document.fonts.ready;
+    // Render outside the initially hidden slide so Mermaid can measure labels.
+    const rendered=await mermaid.render('process-diagram',diagramSource);
+    diagram.innerHTML=rendered.svg;
+    const deck = new Reveal({
+      width:1280,height:720,margin:0.06,hash:true,slideNumber:'c/t',transition:'fade',
+      pdfSeparateFragments:false,pdfMaxPagesPerSlide:1,
+      plugins:[RevealMarkdown,RevealHighlight,RevealNotes,RevealSearch,RevealZoom,RevealMath.KaTeX],
+      katex:{local:'{BASE_URL}/libs/js-core/katex',extensions:[]}
+    });
+    window.deck=deck;
+    await deck.initialize();
+    await new Promise((resolve,reject)=>{
+      const started=performance.now();
+      function check(){if(document.querySelector('.katex'))return resolve();
+        if(performance.now()-started>10000)return reject(new Error('本地公式渲染超时'));
+        requestAnimationFrame(check);}
+      check();
+    });
+    const target=document.getElementById('trend');
+    const chart=echarts.init(target,null,{renderer:'svg',width:1100,height:360});
+    window.trendChart=chart;
+    const data=[[1,12],[2,18],[3,17],[4,26],[5,31],[6,35]];
+    const regression=ecStat.regression('linear',data);
+    chart.setOption({animation:!printing,textStyle:{fontFamily:font,color:themeColor},
+      tooltip:{trigger:'axis'},legend:{textStyle:{color:themeColor}},
+      grid:{left:65,right:30,top:55,bottom:45},
+      xAxis:{type:'value',name:'月',min:1,max:6,interval:1,axisLabel:{color:themeColor}},
+      yAxis:{type:'value',name:'指标',axisLabel:{color:themeColor}},
+      series:[{name:'观测值',type:'scatter',symbolSize:16,data,itemStyle:{color:dark?'#69d2d9':'#176b87'}},
+        {name:'线性回归',type:'line',showSymbol:false,data:regression.points,itemStyle:{color:'#d58a36'}}]});
+    const resize=()=>{if(target.getBoundingClientRect().width>0) chart.resize({width:target.clientWidth||1100,height:360});};
+    deck.on('slidechanged',()=>requestAnimationFrame(resize));
+    deck.on('resize',resize);deck.on('pdf-ready',resize);window.addEventListener('beforeprint',resize);
+    await document.fonts.ready;
+    await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+    window.__RENDER_READY__=true;
+  })().catch(error=>{document.getElementById('deck-status').textContent='演示加载失败：'+error.message;console.error(error);});
+  </script>
+</body>
+</html>

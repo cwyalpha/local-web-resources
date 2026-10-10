@@ -1,0 +1,562 @@
+{
+  "aos": {
+    "version": "2.3.4"
+  },
+  "canvas-confetti": {
+    "version": "1.9.4",
+    "category": "动画",
+    "desc": "彩纸动画",
+    "tier": "conditional",
+    "global": "confetti",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/animation/canvas-confetti/confetti.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "countup.js": {
+    "version": "2.10.1"
+  },
+  "gsap": {
+    "version": "3.13.0"
+  },
+  "lottie-web": {
+    "version": "5.13.0"
+  },
+  "particles.js": {
+    "version": "2.0.0"
+  },
+  "wow": {
+    "version": "1.1.2"
+  },
+  "Chart.js": {
+    "version": "4.5.0"
+  },
+  "antv-g2": {
+    "version": "5.4.1"
+  },
+  "antv-g6": {
+    "version": "5.0.49"
+  },
+  "antv-x6": {
+    "version": "3.1.7"
+  },
+  "apexcharts": {
+    "version": "5.3.5"
+  },
+  "cytoscape": {
+    "version": "3.34.3"
+  },
+  "d3": {
+    "version": "7.9.0"
+  },
+  "echarts": {
+    "version": "6.1.0"
+  },
+  "mermaid": {
+    "version": "11.12.0"
+  },
+  "plotly": {
+    "version": "3.7.0"
+  },
+  "vis-network": {
+    "version": "10.1.0"
+  },
+  "highlight.js": {
+    "version": "11.11.1"
+  },
+  "prism": {
+    "version": "1.30.0"
+  },
+  "animate.css": {
+    "version": "4.1.1"
+  },
+  "bootstrap": {
+    "version": "5.3.8"
+  },
+  "bulma": {
+    "version": "1.0.4"
+  },
+  "modern-normalize": {
+    "version": "3.0.1"
+  },
+  "normalize": {
+    "version": "8.0.1"
+  },
+  "picocss": {
+    "version": "2.1.1"
+  },
+  "tailwindcss-browser": {
+    "version": "4.1.13"
+  },
+  "codemirror": {
+    "version": "5.65.21"
+  },
+  "monaco-editor": {
+    "version": "0.53.0"
+  },
+  "tinymce": {
+    "version": "8.1.2",
+    "license": "GPL-2.0-or-later OR 商业许可（以随附上游许可为准）"
+  },
+  "bootstrap-icons": {
+    "version": "1.13.1"
+  },
+  "font-awesome": {
+    "version": "7.0.1"
+  },
+  "lucide": {
+    "version": "1.55.0"
+  },
+  "material-design-icons": {
+    "version": "4.0.0"
+  },
+  "remixicon": {
+    "version": "4.6.0"
+  },
+  "tabler-icons": {
+    "version": "3.35.0"
+  },
+  "alpinejs": {
+    "version": "3.17.4"
+  },
+  "crypto-js": {
+    "version": "4.2.0"
+  },
+  "dayjs": {
+    "version": "1.11.23"
+  },
+  "dompurify": {
+    "version": "3.4.16"
+  },
+  "jquery": {
+    "version": "3.7.1"
+  },
+  "katex": {
+    "version": "0.16.47"
+  },
+  "lodash.js": {
+    "version": "4.17.21"
+  },
+  "markdown-it": {
+    "version": "14.3.2",
+    "category": "JS 核心",
+    "desc": "Markdown 渲染；不可信输出仍须 DOMPurify",
+    "tier": "conditional",
+    "global": "markdownit",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/js-core/markdown-it/markdown-it.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "marked": {
+    "version": "16.3.0"
+  },
+  "vue": {
+    "version": "3.5.43",
+    "category": "JS 核心",
+    "desc": "静态页面按需使用 Vue 全局生产构建",
+    "tier": "conditional",
+    "global": "Vue",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/js-core/vue/vue.global.prod.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "Sortable": {
+    "version": "1.15.7"
+  },
+  "Swiper": {
+    "version": "11.2.10",
+    "category": "布局",
+    "desc": "触摸轮播与滑动页面",
+    "tier": "conditional",
+    "global": "Swiper",
+    "entrypoints": [
+      {
+        "kind": "css",
+        "path": "libs/layout/Swiper/swiper-bundle.min.css",
+        "load": "head"
+      },
+      {
+        "kind": "js",
+        "path": "libs/layout/Swiper/swiper-bundle.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "fullPage.js": {
+    "version": "4.0.37"
+  },
+  "gridstack.js": {
+    "version": "12.3.3"
+  },
+  "masonry": {
+    "version": "4.2.2"
+  },
+  "reveal.js": {
+    "version": "5.2.1",
+    "category": "布局",
+    "desc": "HTML 幻灯片默认框架，支持备注、分步显示与 PDF 打印。",
+    "tier": "conditional",
+    "global": "Reveal",
+    "entrypoints": [
+      {
+        "kind": "css",
+        "path": "libs/layout/reveal.js/reset.min.css",
+        "load": "head"
+      },
+      {
+        "kind": "css",
+        "path": "libs/layout/reveal.js/reveal.min.css",
+        "load": "head"
+      },
+      {
+        "kind": "css",
+        "path": "libs/layout/reveal.js/theme/white.min.css",
+        "load": "head"
+      },
+      {
+        "kind": "js",
+        "path": "libs/layout/reveal.js/reveal.min.js",
+        "load": "body-end"
+      }
+    ],
+    "note": "完整用法见 ../references/presentations.md；插件按需加载，公式必须指定本地 KaTeX。",
+    "optional_entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/layout/reveal.js/plugin/markdown/markdown.min.js",
+        "load": "after-reveal",
+        "when": "Markdown 幻灯片"
+      },
+      {
+        "kind": "js",
+        "path": "libs/layout/reveal.js/plugin/highlight/highlight.min.js",
+        "load": "after-reveal",
+        "when": "代码高亮"
+      },
+      {
+        "kind": "js",
+        "path": "libs/layout/reveal.js/plugin/notes/notes.min.js",
+        "load": "after-reveal",
+        "when": "演讲者备注"
+      },
+      {
+        "kind": "js",
+        "path": "libs/layout/reveal.js/plugin/search/search.min.js",
+        "load": "after-reveal",
+        "when": "搜索"
+      },
+      {
+        "kind": "js",
+        "path": "libs/layout/reveal.js/plugin/zoom/zoom.min.js",
+        "load": "after-reveal",
+        "when": "局部放大"
+      },
+      {
+        "kind": "js",
+        "path": "libs/layout/reveal.js/plugin/math/math.min.js",
+        "load": "after-reveal",
+        "when": "本地 KaTeX 公式"
+      }
+    ],
+    "license": "MIT"
+  },
+  "simplebar": {
+    "version": "6.3.3",
+    "category": "布局",
+    "desc": "自定义滚动条",
+    "tier": "conditional",
+    "global": "SimpleBar",
+    "entrypoints": [
+      {
+        "kind": "css",
+        "path": "libs/layout/simplebar/simplebar.min.css",
+        "load": "head"
+      },
+      {
+        "kind": "js",
+        "path": "libs/layout/simplebar/simplebar.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "datatables": {
+    "version": "2.3.8"
+  },
+  "handsontable": {
+    "version": "16.1.1"
+  },
+  "tabulator-tables": {
+    "version": "6.6.1"
+  },
+  "choices.js": {
+    "version": "11.2.4"
+  },
+  "cropperjs": {
+    "version": "2.0.0",
+    "global": "Cropper.default",
+    "note": "此 v2 UMD 文件暴露 Cropper 命名空间，构造器为 new Cropper.default(image, options)，不要直接 new Cropper(...)。"
+  },
+  "driver.js": {
+    "version": "1.9.0",
+    "note": "v1.9 的 IIFE 全局为 window.driver.js；调用 window.driver.js.driver({...})，不是 window[\"driver.js\"]。"
+  },
+  "flatpickr": {
+    "version": "4.6.13"
+  },
+  "intro.js": {
+    "version": "8.3.2"
+  },
+  "jstree": {
+    "version": "3.3.17"
+  },
+  "limonte-sweetalert2": {
+    "version": "11.23.0"
+  },
+  "noUiSlider": {
+    "version": "15.8.1"
+  },
+  "nprogress": {
+    "version": "0.2.0"
+  },
+  "select2": {
+    "version": "4.0.13"
+  },
+  "sweetalert2": {
+    "version": "11.23.0"
+  },
+  "toastr.js": {
+    "version": "2.1.4"
+  },
+  "typed.js": {
+    "version": "2.1.0"
+  },
+  "FileSaver.js": {
+    "version": "2.0.5"
+  },
+  "PapaParse": {
+    "version": "5.7.0"
+  },
+  "clipboard.js": {
+    "version": "2.0.11"
+  },
+  "dom-to-image": {
+    "version": "2.6.0"
+  },
+  "fuse.js": {
+    "version": "7.1.0"
+  },
+  "html-to-image": {
+    "version": "1.11.13"
+  },
+  "html2canvas": {
+    "version": "1.4.1"
+  },
+  "jspdf": {
+    "version": "3.0.4",
+    "category": "工具",
+    "desc": "浏览器 PDF 生成；中文须显式嵌入支持字体",
+    "tier": "conditional",
+    "global": "jspdf.jsPDF",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/utils/jspdf/jspdf.umd.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "jszip": {
+    "version": "3.10.2",
+    "category": "工具",
+    "desc": "ZIP 文件读写",
+    "tier": "conditional",
+    "global": "JSZip",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/utils/jszip/jszip.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "localforage": {
+    "version": "1.10.0"
+  },
+  "qrcodejs": {
+    "version": "1.0.0"
+  },
+  "showdown": {
+    "version": "2.1.0"
+  },
+  "signature_pad": {
+    "version": "5.1.4",
+    "category": "工具",
+    "desc": "Canvas 手写签名",
+    "tier": "conditional",
+    "global": "SignaturePad",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/utils/signature_pad/signature_pad.umd.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "turndown": {
+    "version": "7.2.4",
+    "category": "工具",
+    "desc": "HTML 转 Markdown",
+    "tier": "conditional",
+    "global": "TurndownService",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/utils/turndown/turndown.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "xlsx": {
+    "version": "0.20.3"
+  },
+  "echarts-stat": {
+    "version": "1.2.0",
+    "category": "数据可视化",
+    "desc": "统计、直方图、回归和聚类。",
+    "tier": "conditional",
+    "global": "ecStat",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/charts/echarts-stat/ecStat.min.js",
+        "load": "body-end"
+      }
+    ],
+    "dependencies": [
+      "ECharts（仅用于可视化时）"
+    ],
+    "note": "可独立计算；ECharts dataset 转换需 echarts.registerTransform(ecStat.transform.histogram) 等显式注册。",
+    "license": "BSD（上游包元数据声明；上游发行包未附独立许可文本）"
+  },
+  "wordcloud2": {
+    "version": "1.2.3",
+    "category": "数据可视化",
+    "desc": "Canvas / HTML 中文词云。",
+    "tier": "conditional",
+    "global": "WordCloud",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/charts/wordcloud2/wordcloud2.js",
+        "load": "body-end"
+      }
+    ],
+    "note": "先等待中文字体，再调用 WordCloud(canvas, {list:[[词语,权重], ...]})；无自动分词能力。",
+    "license": "MIT"
+  },
+  "impress.js": {
+    "version": "2.0.0",
+    "category": "布局",
+    "desc": "空间缩放和旋转的非线性 HTML 演示。",
+    "tier": "specialized",
+    "global": "impress",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/layout/impress.js/impress.js",
+        "load": "body-end"
+      }
+    ],
+    "note": "仅明确需要空间叙事时使用；默认使用 Reveal.js。示例见 templates/presentation-impress.html。",
+    "license": "MIT"
+  },
+  "arquero": {
+    "version": "8.0.3",
+    "category": "数据可视化",
+    "desc": "表格数据变换、分组汇总、连接和透视；结果可传给任意图表库。",
+    "tier": "conditional",
+    "global": "aq",
+    "license": "BSD-3-Clause",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/charts/arquero/arquero.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "simple-statistics": {
+    "version": "7.12.1",
+    "category": "数据可视化",
+    "desc": "通用统计计算，包括分位数、标准差、相关性和回归。",
+    "tier": "conditional",
+    "global": "ss",
+    "license": "ISC",
+    "entrypoints": [
+      {
+        "kind": "js",
+        "path": "libs/charts/simple-statistics/simple-statistics.min.js",
+        "load": "body-end"
+      }
+    ]
+  },
+  "phosphor-icons": {
+    "version": "2.1.2",
+    "category": "图标",
+    "desc": "多粗细、填充与双色图标；根据页面风格选择字重。",
+    "tier": "conditional",
+    "global": null,
+    "license": "MIT",
+    "entrypoints": [
+      {
+        "kind": "css",
+        "path": "libs/icons/phosphor-icons/src/regular/style.css",
+        "load": "head"
+      }
+    ],
+    "optional_entrypoints": [
+      {
+        "kind": "css",
+        "path": "libs/icons/phosphor-icons/src/thin/style.css",
+        "load": "head",
+        "when": "需要 thin 样式时"
+      },
+      {
+        "kind": "css",
+        "path": "libs/icons/phosphor-icons/src/light/style.css",
+        "load": "head",
+        "when": "需要 light 样式时"
+      },
+      {
+        "kind": "css",
+        "path": "libs/icons/phosphor-icons/src/bold/style.css",
+        "load": "head",
+        "when": "需要 bold 样式时"
+      },
+      {
+        "kind": "css",
+        "path": "libs/icons/phosphor-icons/src/fill/style.css",
+        "load": "head",
+        "when": "需要 fill 样式时"
+      },
+      {
+        "kind": "css",
+        "path": "libs/icons/phosphor-icons/src/duotone/style.css",
+        "load": "head",
+        "when": "需要 duotone 样式时"
+      }
+    ],
+    "note": "regular 使用 ph ph-heart；双色使用 ph-duotone ph-heart。只加载实际用到样式的 CSS，字体资源通过相对 URL 加载。"
+  }
+}

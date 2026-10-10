@@ -1,0 +1,379 @@
+[
+  {
+    "name": "library-canvas-confetti",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-countup.js",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-antv-x6",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-Chart.js",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-cytoscape",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-d3",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-echarts",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-echarts-stat",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-mermaid",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-plotly",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-vis-network",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-highlight.js",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-prism",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-bootstrap",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-codemirror",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-bootstrap-icons",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-lucide",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-alpinejs",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-dayjs",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-dompurify",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-katex",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 4
+  },
+  {
+    "name": "library-lodash.js",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-markdown-it",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-marked",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-vue",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-simplebar",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-Sortable",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-Swiper",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-datatables",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 5
+  },
+  {
+    "name": "library-tabulator-tables",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-choices.js",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-cropperjs",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-driver.js",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-flatpickr",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 4
+  },
+  {
+    "name": "library-sweetalert2",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 3
+  },
+  {
+    "name": "library-FileSaver.js",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-fuse.js",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-html-to-image",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-jspdf",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-jszip",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-PapaParse",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-qrcodejs",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-signature_pad",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-turndown",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "fonts",
+    "passed": true,
+    "detail": {
+      "Noto Sans SC": 4,
+      "Noto Serif SC": 4,
+      "Zhuque Fangsong": 1,
+      "LXGW WenKai": 97,
+      "LXGW WenKai Mono": 97,
+      "Inter": 1,
+      "Roboto": 1,
+      "Merriweather": 1,
+      "JetBrains Mono": 1
+    },
+    "requests": 210
+  },
+  {
+    "name": "base-template",
+    "passed": true,
+    "detail": "base rendered",
+    "requests": 12
+  },
+  {
+    "name": "analysis",
+    "passed": true,
+    "detail": "样本数：10；均值：3.7",
+    "requests": 20
+  },
+  {
+    "name": "library-xlsx",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "impress",
+    "passed": true,
+    "detail": "navigation",
+    "requests": 21
+  },
+  {
+    "name": "presentation-1366",
+    "passed": true,
+    "detail": {
+      "width": 1280,
+      "count": 6,
+      "overflow": false,
+      "fullscreen": true,
+      "notes": true
+    },
+    "requests": 47
+  },
+  {
+    "name": "presentation-1920",
+    "passed": true,
+    "detail": {
+      "width": 1280,
+      "count": 6,
+      "overflow": false,
+      "fullscreen": true,
+      "notes": true
+    },
+    "requests": 47
+  },
+  {
+    "name": "presentation-pdf",
+    "passed": true,
+    "detail": {
+      "pages": 6,
+      "formula": 1,
+      "diagram": {
+        "x": 352,
+        "y": 2676.90625,
+        "width": 662,
+        "height": 105
+      }
+    },
+    "requests": 46
+  },
+  {
+    "name": "library-arquero",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-simple-statistics",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 2
+  },
+  {
+    "name": "library-phosphor-icons",
+    "passed": true,
+    "detail": "loaded; functional case completed",
+    "requests": 13
+  },
+  {
+    "name": "additional-fonts",
+    "passed": true,
+    "detail": {
+      "oblique 400 32px \"Smiley Sans\"": 2,
+      "400 32px \"Resource Han Rounded CN\"": 2,
+      "700 32px \"Resource Han Rounded CN\"": 2
+    },
+    "requests": 9
+  },
+  {
+    "name": "data-style",
+    "passed": true,
+    "detail": "group totals, statistics, fonts and icons",
+    "requests": 22
+  }
+]

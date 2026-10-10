@@ -10,10 +10,13 @@
 
 未验证普通 `<script>` / `<link>` 入口。仅在明确需要此库时，从下方文件清单选择并做浏览器验证。
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## 目录
 
 - [CSS 文件](#css-文件)
 - [JS 文件](#js-文件)
+- [其他文件](#其他文件)
 
 ## CSS 文件
 
@@ -42,3 +45,7 @@
 - `{BASE_URL}/libs/editors/monaco-editor/min/vs/cssMode.71dc3162.min.js` (3.7 KB)
 - `{BASE_URL}/libs/editors/monaco-editor/min/vs/cypher.a7170d54.min.js` (3.3 KB)
 - ……其余 91 个文件可通过 `components/index.json` 或服务器目录检索。
+
+## 其他文件
+
+- `{BASE_URL}/libs/editors/monaco-editor/LICENSE` (1.1 KB)

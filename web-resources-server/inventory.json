@@ -2,16 +2,16 @@
   "schema_version": 2,
   "description": "Local HTTP web resource server inventory",
   "summary": {
-    "library_count": 84,
-    "font_family_count": 9,
-    "total_size_mb": 164.6
+    "library_count": 90,
+    "font_family_count": 11,
+    "total_size_mb": 202.8
   },
   "libraries": [
     {
       "name": "aos",
       "directory": "libs/animation/aos",
-      "file_count": 2,
-      "total_size_kb": 39.8,
+      "file_count": 3,
+      "total_size_kb": 40.8,
       "extensions": [
         ".css",
         ".js"
@@ -21,8 +21,8 @@
     {
       "name": "canvas-confetti",
       "directory": "libs/animation/canvas-confetti",
-      "file_count": 1,
-      "total_size_kb": 10.0,
+      "file_count": 2,
+      "total_size_kb": 25.1,
       "extensions": [
         ".js"
       ],
@@ -31,10 +31,11 @@
     {
       "name": "countup.js",
       "directory": "libs/animation/countup.js",
-      "file_count": 3,
-      "total_size_kb": 12.3,
+      "file_count": 4,
+      "total_size_kb": 15.6,
       "extensions": [
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "animation"
     },
@@ -51,20 +52,22 @@
     {
       "name": "lottie-web",
       "directory": "libs/animation/lottie-web",
-      "file_count": 9,
-      "total_size_kb": 2226.3,
+      "file_count": 10,
+      "total_size_kb": 2227.4,
       "extensions": [
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "animation"
     },
     {
       "name": "particles.js",
       "directory": "libs/animation/particles.js",
-      "file_count": 1,
-      "total_size_kb": 22.8,
+      "file_count": 2,
+      "total_size_kb": 23.9,
       "extensions": [
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "animation"
     },
@@ -79,20 +82,10 @@
       "category": "animation"
     },
     {
-      "name": "Chart.js",
-      "directory": "libs/charts/Chart.js",
-      "file_count": 3,
-      "total_size_kb": 587.0,
-      "extensions": [
-        ".js"
-      ],
-      "category": "charts"
-    },
-    {
       "name": "antv-g2",
       "directory": "libs/charts/antv-g2",
-      "file_count": 2,
-      "total_size_kb": 1936.9,
+      "file_count": 3,
+      "total_size_kb": 1938.0,
       "extensions": [
         ".js"
       ],
@@ -101,8 +94,8 @@
     {
       "name": "antv-g6",
       "directory": "libs/charts/antv-g6",
-      "file_count": 1,
-      "total_size_kb": 1091.7,
+      "file_count": 2,
+      "total_size_kb": 1092.7,
       "extensions": [
         ".js"
       ],
@@ -122,8 +115,8 @@
     {
       "name": "apexcharts",
       "directory": "libs/charts/apexcharts",
-      "file_count": 3,
-      "total_size_kb": 581.6,
+      "file_count": 4,
+      "total_size_kb": 584.4,
       "extensions": [
         ".css",
         ".js"
@@ -131,20 +124,43 @@
       "category": "charts"
     },
     {
+      "name": "arquero",
+      "directory": "libs/charts/arquero",
+      "file_count": 3,
+      "total_size_kb": 1349.8,
+      "extensions": [
+        ".js",
+        ".map"
+      ],
+      "category": "charts"
+    },
+    {
+      "name": "Chart.js",
+      "directory": "libs/charts/Chart.js",
+      "file_count": 4,
+      "total_size_kb": 588.0,
+      "extensions": [
+        ".js",
+        ".md"
+      ],
+      "category": "charts"
+    },
+    {
       "name": "cytoscape",
       "directory": "libs/charts/cytoscape",
-      "file_count": 3,
-      "total_size_kb": 851.3,
+      "file_count": 4,
+      "total_size_kb": 1577.2,
       "extensions": [
-        ".js"
+        ".js",
+        ".mjs"
       ],
       "category": "charts"
     },
     {
       "name": "d3",
       "directory": "libs/charts/d3",
-      "file_count": 1,
-      "total_size_kb": 273.2,
+      "file_count": 2,
+      "total_size_kb": 273.9,
       "extensions": [
         ".js"
       ],
@@ -153,8 +169,8 @@
     {
       "name": "echarts",
       "directory": "libs/charts/echarts",
-      "file_count": 98,
-      "total_size_kb": 19145.1,
+      "file_count": 100,
+      "total_size_kb": 19496.5,
       "extensions": [
         ".js",
         ".json"
@@ -162,10 +178,20 @@
       "category": "charts"
     },
     {
+      "name": "echarts-stat",
+      "directory": "libs/charts/echarts-stat",
+      "file_count": 1,
+      "total_size_kb": 15.7,
+      "extensions": [
+        ".js"
+      ],
+      "category": "charts"
+    },
+    {
       "name": "mermaid",
       "directory": "libs/charts/mermaid",
-      "file_count": 1,
-      "total_size_kb": 2684.6,
+      "file_count": 2,
+      "total_size_kb": 2685.6,
       "extensions": [
         ".js"
       ],
@@ -182,6 +208,17 @@
       "category": "charts"
     },
     {
+      "name": "simple-statistics",
+      "directory": "libs/charts/simple-statistics",
+      "file_count": 3,
+      "total_size_kb": 247.0,
+      "extensions": [
+        ".js",
+        ".map"
+      ],
+      "category": "charts"
+    },
+    {
       "name": "vis-network",
       "directory": "libs/charts/vis-network",
       "file_count": 4,
@@ -194,10 +231,20 @@
       "category": "charts"
     },
     {
+      "name": "wordcloud2",
+      "directory": "libs/charts/wordcloud2",
+      "file_count": 2,
+      "total_size_kb": 37.8,
+      "extensions": [
+        ".js"
+      ],
+      "category": "charts"
+    },
+    {
       "name": "highlight.js",
       "directory": "libs/code-highlight/highlight.js",
-      "file_count": 30,
-      "total_size_kb": 290.4,
+      "file_count": 31,
+      "total_size_kb": 291.9,
       "extensions": [
         ".css",
         ".js"
@@ -218,8 +265,8 @@
     {
       "name": "animate.css",
       "directory": "libs/css-frameworks/animate.css",
-      "file_count": 2,
-      "total_size_kb": 139.0,
+      "file_count": 3,
+      "total_size_kb": 140.0,
       "extensions": [
         ".css"
       ],
@@ -228,8 +275,8 @@
     {
       "name": "bootstrap",
       "directory": "libs/css-frameworks/bootstrap",
-      "file_count": 11,
-      "total_size_kb": 951.3,
+      "file_count": 12,
+      "total_size_kb": 952.4,
       "extensions": [
         ".css",
         ".js"
@@ -239,8 +286,8 @@
     {
       "name": "bulma",
       "directory": "libs/css-frameworks/bulma",
-      "file_count": 1,
-      "total_size_kb": 662.0,
+      "file_count": 2,
+      "total_size_kb": 663.1,
       "extensions": [
         ".css"
       ],
@@ -249,8 +296,8 @@
     {
       "name": "modern-normalize",
       "directory": "libs/css-frameworks/modern-normalize",
-      "file_count": 1,
-      "total_size_kb": 1.1,
+      "file_count": 2,
+      "total_size_kb": 2.2,
       "extensions": [
         ".css"
       ],
@@ -259,28 +306,30 @@
     {
       "name": "normalize",
       "directory": "libs/css-frameworks/normalize",
-      "file_count": 1,
-      "total_size_kb": 1.8,
+      "file_count": 2,
+      "total_size_kb": 2.9,
       "extensions": [
-        ".css"
+        ".css",
+        ".md"
       ],
       "category": "css-frameworks"
     },
     {
       "name": "picocss",
       "directory": "libs/css-frameworks/picocss",
-      "file_count": 4,
-      "total_size_kb": 319.8,
+      "file_count": 5,
+      "total_size_kb": 320.8,
       "extensions": [
-        ".css"
+        ".css",
+        ".md"
       ],
       "category": "css-frameworks"
     },
     {
       "name": "tailwindcss-browser",
       "directory": "libs/css-frameworks/tailwindcss-browser",
-      "file_count": 1,
-      "total_size_kb": 250.2,
+      "file_count": 2,
+      "total_size_kb": 251.3,
       "extensions": [
         ".js"
       ],
@@ -300,8 +349,8 @@
     {
       "name": "monaco-editor",
       "directory": "libs/editors/monaco-editor",
-      "file_count": 112,
-      "total_size_kb": 13535.1,
+      "file_count": 113,
+      "total_size_kb": 13536.2,
       "extensions": [
         ".css",
         ".js"
@@ -311,19 +360,20 @@
     {
       "name": "tinymce",
       "directory": "libs/editors/tinymce",
-      "file_count": 109,
-      "total_size_kb": 2940.8,
+      "file_count": 110,
+      "total_size_kb": 2941.1,
       "extensions": [
         ".css",
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "editors"
     },
     {
       "name": "bootstrap-icons",
       "directory": "libs/icons/bootstrap-icons",
-      "file_count": 3,
-      "total_size_kb": 391.9,
+      "file_count": 4,
+      "total_size_kb": 393.0,
       "extensions": [
         ".css",
         ".woff",
@@ -334,11 +384,12 @@
     {
       "name": "font-awesome",
       "directory": "libs/icons/font-awesome",
-      "file_count": 21,
-      "total_size_kb": 3400.1,
+      "file_count": 22,
+      "total_size_kb": 3407.4,
       "extensions": [
         ".css",
         ".js",
+        ".txt",
         ".woff2"
       ],
       "category": "icons"
@@ -347,7 +398,7 @@
       "name": "lucide",
       "directory": "libs/icons/lucide",
       "file_count": 3,
-      "total_size_kb": 1011.8,
+      "total_size_kb": 1097.7,
       "extensions": [
         ".js"
       ],
@@ -365,10 +416,24 @@
       "category": "icons"
     },
     {
+      "name": "phosphor-icons",
+      "directory": "libs/icons/phosphor-icons",
+      "file_count": 31,
+      "total_size_kb": 24097.8,
+      "extensions": [
+        ".css",
+        ".svg",
+        ".ttf",
+        ".woff",
+        ".woff2"
+      ],
+      "category": "icons"
+    },
+    {
       "name": "remixicon",
       "directory": "libs/icons/remixicon",
-      "file_count": 6,
-      "total_size_kb": 4320.6,
+      "file_count": 7,
+      "total_size_kb": 4331.7,
       "extensions": [
         ".css",
         ".eot",
@@ -382,8 +447,8 @@
     {
       "name": "tabler-icons",
       "directory": "libs/icons/tabler-icons",
-      "file_count": 36,
-      "total_size_kb": 27479.6,
+      "file_count": 37,
+      "total_size_kb": 27480.6,
       "extensions": [
         ".css",
         ".ttf",
@@ -396,7 +461,7 @@
       "name": "alpinejs",
       "directory": "libs/js-core/alpinejs",
       "file_count": 3,
-      "total_size_kb": 156.9,
+      "total_size_kb": 189.3,
       "extensions": [
         ".js",
         ".md"
@@ -406,8 +471,8 @@
     {
       "name": "crypto-js",
       "directory": "libs/js-core/crypto-js",
-      "file_count": 50,
-      "total_size_kb": 131.2,
+      "file_count": 51,
+      "total_size_kb": 132.3,
       "extensions": [
         ".js"
       ],
@@ -416,8 +481,8 @@
     {
       "name": "dayjs",
       "directory": "libs/js-core/dayjs",
-      "file_count": 25,
-      "total_size_kb": 40.9,
+      "file_count": 26,
+      "total_size_kb": 42.2,
       "extensions": [
         ".js"
       ],
@@ -426,8 +491,8 @@
     {
       "name": "dompurify",
       "directory": "libs/js-core/dompurify",
-      "file_count": 1,
-      "total_size_kb": 22.1,
+      "file_count": 3,
+      "total_size_kb": 55.6,
       "extensions": [
         ".js"
       ],
@@ -436,18 +501,19 @@
     {
       "name": "jquery",
       "directory": "libs/js-core/jquery",
-      "file_count": 2,
-      "total_size_kb": 154.1,
+      "file_count": 3,
+      "total_size_kb": 155.2,
       "extensions": [
-        ".js"
+        ".js",
+        ".txt"
       ],
       "category": "js-core"
     },
     {
       "name": "katex",
       "directory": "libs/js-core/katex",
-      "file_count": 67,
-      "total_size_kb": 1392.0,
+      "file_count": 72,
+      "total_size_kb": 1715.3,
       "extensions": [
         ".css",
         ".js",
@@ -460,8 +526,8 @@
     {
       "name": "lodash.js",
       "directory": "libs/js-core/lodash.js",
-      "file_count": 3,
-      "total_size_kb": 615.0,
+      "file_count": 4,
+      "total_size_kb": 616.9,
       "extensions": [
         ".js"
       ],
@@ -470,8 +536,8 @@
     {
       "name": "markdown-it",
       "directory": "libs/js-core/markdown-it",
-      "file_count": 1,
-      "total_size_kb": 120.6,
+      "file_count": 2,
+      "total_size_kb": 123.6,
       "extensions": [
         ".js"
       ],
@@ -480,49 +546,29 @@
     {
       "name": "marked",
       "directory": "libs/js-core/marked",
-      "file_count": 2,
-      "total_size_kb": 76.1,
+      "file_count": 3,
+      "total_size_kb": 79.0,
       "extensions": [
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "js-core"
     },
     {
       "name": "vue",
       "directory": "libs/js-core/vue",
-      "file_count": 8,
-      "total_size_kb": 2175.5,
+      "file_count": 9,
+      "total_size_kb": 2933.8,
       "extensions": [
         ".js"
       ],
       "category": "js-core"
     },
     {
-      "name": "Sortable",
-      "directory": "libs/layout/Sortable",
-      "file_count": 1,
-      "total_size_kb": 44.0,
-      "extensions": [
-        ".js"
-      ],
-      "category": "layout"
-    },
-    {
-      "name": "Swiper",
-      "directory": "libs/layout/Swiper",
-      "file_count": 2,
-      "total_size_kb": 163.0,
-      "extensions": [
-        ".css",
-        ".js"
-      ],
-      "category": "layout"
-    },
-    {
       "name": "fullPage.js",
       "directory": "libs/layout/fullPage.js",
-      "file_count": 4,
-      "total_size_kb": 129.8,
+      "file_count": 5,
+      "total_size_kb": 164.8,
       "extensions": [
         ".css",
         ".js"
@@ -532,10 +578,20 @@
     {
       "name": "gridstack.js",
       "directory": "libs/layout/gridstack.js",
-      "file_count": 15,
-      "total_size_kb": 167.4,
+      "file_count": 16,
+      "total_size_kb": 168.5,
       "extensions": [
         ".css",
+        ".js"
+      ],
+      "category": "layout"
+    },
+    {
+      "name": "impress.js",
+      "directory": "libs/layout/impress.js",
+      "file_count": 2,
+      "total_size_kb": 179.8,
+      "extensions": [
         ".js"
       ],
       "category": "layout"
@@ -553,8 +609,8 @@
     {
       "name": "reveal.js",
       "directory": "libs/layout/reveal.js",
-      "file_count": 59,
-      "total_size_kb": 4328.3,
+      "file_count": 60,
+      "total_size_kb": 4329.0,
       "extensions": [
         ".css",
         ".eot",
@@ -567,8 +623,29 @@
     {
       "name": "simplebar",
       "directory": "libs/layout/simplebar",
+      "file_count": 3,
+      "total_size_kb": 30.9,
+      "extensions": [
+        ".css",
+        ".js"
+      ],
+      "category": "layout"
+    },
+    {
+      "name": "Sortable",
+      "directory": "libs/layout/Sortable",
       "file_count": 2,
-      "total_size_kb": 29.8,
+      "total_size_kb": 45.5,
+      "extensions": [
+        ".js"
+      ],
+      "category": "layout"
+    },
+    {
+      "name": "Swiper",
+      "directory": "libs/layout/Swiper",
+      "file_count": 3,
+      "total_size_kb": 170.1,
       "extensions": [
         ".css",
         ".js"
@@ -591,19 +668,20 @@
     {
       "name": "handsontable",
       "directory": "libs/tables/handsontable",
-      "file_count": 4,
-      "total_size_kb": 2971.7,
+      "file_count": 5,
+      "total_size_kb": 2973.2,
       "extensions": [
         ".css",
-        ".js"
+        ".js",
+        ".txt"
       ],
       "category": "tables"
     },
     {
       "name": "tabulator-tables",
       "directory": "libs/tables/tabulator-tables",
-      "file_count": 15,
-      "total_size_kb": 1258.4,
+      "file_count": 16,
+      "total_size_kb": 1295.8,
       "extensions": [
         ".css",
         ".js"
@@ -613,8 +691,8 @@
     {
       "name": "choices.js",
       "directory": "libs/ui-components/choices.js",
-      "file_count": 6,
-      "total_size_kb": 266.3,
+      "file_count": 7,
+      "total_size_kb": 279.3,
       "extensions": [
         ".css",
         ".js"
@@ -624,8 +702,8 @@
     {
       "name": "cropperjs",
       "directory": "libs/ui-components/cropperjs",
-      "file_count": 4,
-      "total_size_kb": 85.4,
+      "file_count": 5,
+      "total_size_kb": 86.4,
       "extensions": [
         ".js"
       ],
@@ -635,7 +713,7 @@
       "name": "driver.js",
       "directory": "libs/ui-components/driver.js",
       "file_count": 4,
-      "total_size_kb": 32.7,
+      "total_size_kb": 32.6,
       "extensions": [
         ".css",
         ".js"
@@ -645,30 +723,32 @@
     {
       "name": "flatpickr",
       "directory": "libs/ui-components/flatpickr",
-      "file_count": 167,
-      "total_size_kb": 344.7,
+      "file_count": 168,
+      "total_size_kb": 345.8,
       "extensions": [
         ".css",
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "ui-components"
     },
     {
       "name": "intro.js",
       "directory": "libs/ui-components/intro.js",
-      "file_count": 3,
-      "total_size_kb": 70.4,
+      "file_count": 4,
+      "total_size_kb": 104.6,
       "extensions": [
         ".css",
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "ui-components"
     },
     {
       "name": "jstree",
       "directory": "libs/ui-components/jstree",
-      "file_count": 9,
-      "total_size_kb": 211.1,
+      "file_count": 10,
+      "total_size_kb": 212.1,
       "extensions": [
         ".css",
         ".gif",
@@ -680,8 +760,8 @@
     {
       "name": "limonte-sweetalert2",
       "directory": "libs/ui-components/limonte-sweetalert2",
-      "file_count": 5,
-      "total_size_kb": 275.6,
+      "file_count": 6,
+      "total_size_kb": 276.6,
       "extensions": [
         ".css",
         ".js"
@@ -691,41 +771,44 @@
     {
       "name": "noUiSlider",
       "directory": "libs/ui-components/noUiSlider",
-      "file_count": 2,
-      "total_size_kb": 31.2,
+      "file_count": 3,
+      "total_size_kb": 32.3,
       "extensions": [
         ".css",
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "ui-components"
     },
     {
       "name": "nprogress",
       "directory": "libs/ui-components/nprogress",
-      "file_count": 2,
-      "total_size_kb": 5.1,
+      "file_count": 3,
+      "total_size_kb": 6.1,
       "extensions": [
         ".css",
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "ui-components"
     },
     {
       "name": "select2",
       "directory": "libs/ui-components/select2",
-      "file_count": 62,
-      "total_size_kb": 210.9,
+      "file_count": 63,
+      "total_size_kb": 212.0,
       "extensions": [
         ".css",
-        ".js"
+        ".js",
+        ".md"
       ],
       "category": "ui-components"
     },
     {
       "name": "sweetalert2",
       "directory": "libs/ui-components/sweetalert2",
-      "file_count": 5,
-      "total_size_kb": 275.6,
+      "file_count": 6,
+      "total_size_kb": 276.6,
       "extensions": [
         ".css",
         ".js"
@@ -746,38 +829,19 @@
     {
       "name": "typed.js",
       "directory": "libs/ui-components/typed.js",
-      "file_count": 2,
-      "total_size_kb": 18.8,
+      "file_count": 3,
+      "total_size_kb": 19.8,
       "extensions": [
-        ".js"
+        ".js",
+        ".txt"
       ],
       "category": "ui-components"
     },
     {
-      "name": "FileSaver.js",
-      "directory": "libs/utils/FileSaver.js",
-      "file_count": 1,
-      "total_size_kb": 2.7,
-      "extensions": [
-        ".js"
-      ],
-      "category": "utils"
-    },
-    {
-      "name": "PapaParse",
-      "directory": "libs/utils/PapaParse",
-      "file_count": 1,
-      "total_size_kb": 19.0,
-      "extensions": [
-        ".js"
-      ],
-      "category": "utils"
-    },
-    {
       "name": "clipboard.js",
       "directory": "libs/utils/clipboard.js",
-      "file_count": 1,
-      "total_size_kb": 8.9,
+      "file_count": 2,
+      "total_size_kb": 10.0,
       "extensions": [
         ".js"
       ],
@@ -786,18 +850,29 @@
     {
       "name": "dom-to-image",
       "directory": "libs/utils/dom-to-image",
-      "file_count": 1,
-      "total_size_kb": 9.1,
+      "file_count": 2,
+      "total_size_kb": 10.2,
       "extensions": [
         ".js"
       ],
       "category": "utils"
     },
     {
+      "name": "FileSaver.js",
+      "directory": "libs/utils/FileSaver.js",
+      "file_count": 2,
+      "total_size_kb": 3.8,
+      "extensions": [
+        ".js",
+        ".md"
+      ],
+      "category": "utils"
+    },
+    {
       "name": "fuse.js",
       "directory": "libs/utils/fuse.js",
-      "file_count": 2,
-      "total_size_kb": 43.1,
+      "file_count": 3,
+      "total_size_kb": 54.2,
       "extensions": [
         ".js"
       ],
@@ -806,8 +881,8 @@
     {
       "name": "html-to-image",
       "directory": "libs/utils/html-to-image",
-      "file_count": 1,
-      "total_size_kb": 19.1,
+      "file_count": 2,
+      "total_size_kb": 20.2,
       "extensions": [
         ".js"
       ],
@@ -816,8 +891,8 @@
     {
       "name": "html2canvas",
       "directory": "libs/utils/html2canvas",
-      "file_count": 2,
-      "total_size_kb": 412.7,
+      "file_count": 3,
+      "total_size_kb": 413.7,
       "extensions": [
         ".js"
       ],
@@ -826,8 +901,8 @@
     {
       "name": "jspdf",
       "directory": "libs/utils/jspdf",
-      "file_count": 4,
-      "total_size_kb": 804.8,
+      "file_count": 5,
+      "total_size_kb": 814.6,
       "extensions": [
         ".js"
       ],
@@ -836,18 +911,29 @@
     {
       "name": "jszip",
       "directory": "libs/utils/jszip",
-      "file_count": 1,
-      "total_size_kb": 95.3,
+      "file_count": 2,
+      "total_size_kb": 128.5,
       "extensions": [
-        ".js"
+        ".js",
+        ".markdown"
       ],
       "category": "utils"
     },
     {
       "name": "localforage",
       "directory": "libs/utils/localforage",
+      "file_count": 3,
+      "total_size_kb": 65.2,
+      "extensions": [
+        ".js"
+      ],
+      "category": "utils"
+    },
+    {
+      "name": "PapaParse",
+      "directory": "libs/utils/PapaParse",
       "file_count": 2,
-      "total_size_kb": 54.1,
+      "total_size_kb": 19.5,
       "extensions": [
         ".js"
       ],
@@ -856,8 +942,8 @@
     {
       "name": "qrcodejs",
       "directory": "libs/utils/qrcodejs",
-      "file_count": 1,
-      "total_size_kb": 19.5,
+      "file_count": 2,
+      "total_size_kb": 20.5,
       "extensions": [
         ".js"
       ],
@@ -866,8 +952,8 @@
     {
       "name": "showdown",
       "directory": "libs/utils/showdown",
-      "file_count": 1,
-      "total_size_kb": 73.4,
+      "file_count": 2,
+      "total_size_kb": 74.5,
       "extensions": [
         ".js"
       ],
@@ -876,8 +962,8 @@
     {
       "name": "signature_pad",
       "directory": "libs/utils/signature_pad",
-      "file_count": 2,
-      "total_size_kb": 28.8,
+      "file_count": 3,
+      "total_size_kb": 32.6,
       "extensions": [
         ".js"
       ],
@@ -886,8 +972,8 @@
     {
       "name": "turndown",
       "directory": "libs/utils/turndown",
-      "file_count": 1,
-      "total_size_kb": 10.3,
+      "file_count": 2,
+      "total_size_kb": 27.1,
       "extensions": [
         ".js"
       ],
@@ -896,8 +982,8 @@
     {
       "name": "xlsx",
       "directory": "libs/utils/xlsx",
-      "file_count": 8,
-      "total_size_kb": 2541.8,
+      "file_count": 7,
+      "total_size_kb": 2198.8,
       "extensions": [
         ".js"
       ],
@@ -970,11 +1056,31 @@
       ]
     },
     {
+      "name": "resource-han-rounded",
+      "directory": "fonts/resource-han-rounded",
+      "file_count": 3,
+      "total_size_kb": 9797.5,
+      "extensions": [
+        ".txt",
+        ".woff2"
+      ]
+    },
+    {
       "name": "roboto",
       "directory": "fonts/roboto",
       "file_count": 12,
       "total_size_kb": 226.6,
       "extensions": [
+        ".woff2"
+      ]
+    },
+    {
+      "name": "smiley-sans",
+      "directory": "fonts/smiley-sans",
+      "file_count": 2,
+      "total_size_kb": 1128.3,
+      "extensions": [
+        ".txt",
         ".woff2"
       ]
     },

@@ -1,0 +1,9 @@
+{
+  "reveal_themes_offline_fonts": [
+    "libs/layout/reveal.js/theme/blood.min.css",
+    "libs/layout/reveal.js/theme/night.min.css",
+    "libs/layout/reveal.js/theme/simple.min.css",
+    "libs/layout/reveal.js/theme/sky.min.css"
+  ],
+  "katex_reveal_aliases": "dist/ JS aliases, CSS font URLs rebased to ../fonts/"
+}

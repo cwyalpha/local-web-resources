@@ -17,6 +17,8 @@
 - JS（body-end）：`{BASE_URL}/libs/tables/datatables/js/dataTables.min.js`
 - JS（body-end）：`{BASE_URL}/libs/tables/datatables/js/dataTables.bootstrap5.min.js`
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## CSS 文件
 
 - `{BASE_URL}/libs/tables/datatables/css/dataTables.bootstrap.min.css` (4.2 KB)
@@ -49,9 +51,9 @@
 
 ## 其他文件
 
-- `{BASE_URL}/libs/tables/datatables/License.txt` (1.1 KB)
 - `{BASE_URL}/libs/tables/datatables/images/sort_asc.png` (0.2 KB)
 - `{BASE_URL}/libs/tables/datatables/images/sort_asc_disabled.png` (0.1 KB)
 - `{BASE_URL}/libs/tables/datatables/images/sort_both.png` (0.2 KB)
 - `{BASE_URL}/libs/tables/datatables/images/sort_desc.png` (0.2 KB)
 - `{BASE_URL}/libs/tables/datatables/images/sort_desc_disabled.png` (0.1 KB)
+- `{BASE_URL}/libs/tables/datatables/License.txt` (1.1 KB)

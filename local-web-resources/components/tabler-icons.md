@@ -10,6 +10,8 @@
 
 未验证普通 `<script>` / `<link>` 入口。仅在明确需要此库时，从下方文件清单选择并做浏览器验证。
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## CSS 文件
 
 - `{BASE_URL}/libs/icons/tabler-icons/tabler-icons-200-filled.min.css` (40.5 KB)
@@ -37,3 +39,7 @@
 - `{BASE_URL}/libs/icons/tabler-icons/fonts/tabler-icons-300-filled.woff` (154.2 KB)
 - `{BASE_URL}/libs/icons/tabler-icons/fonts/tabler-icons-300-filled.woff2` (120.5 KB)
 - ……其余 15 个文件可通过 `components/index.json` 或服务器目录检索。
+
+## 其他文件
+
+- `{BASE_URL}/libs/icons/tabler-icons/LICENSE` (1.0 KB)

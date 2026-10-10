@@ -5,6 +5,8 @@
 
 | 字体 | CSS font-family | 说明 |
 |------|----------------|------|
+| smiley-sans | `'Smiley Sans'` | 得意黑 v2.0.1：倾斜标题字体，font-style: oblique，400 字重 |
+| resource-han-rounded | `'Resource Han Rounded CN'` | 源泉圆体 v0.990：简体中文圆体，400/700 字重，保留完整字形 |
 | inter | `'Inter'` | 英文 UI 无衬线字体 |
 | roboto | `'Roboto'` | 英文通用无衬线字体 |
 | jetbrains-mono | `'JetBrains Mono'` | 代码等宽字体 |

@@ -5,16 +5,19 @@
 - 推荐级别：license-gated
 - 状态：license-gated
 - 说明：富文本编辑器
-- 许可：GPLv2+ 或商业许可
+- 许可：GPL-2.0-or-later OR 商业许可（以随附上游许可为准）
 
 ## 推荐入口
 
 未验证普通 `<script>` / `<link>` 入口。仅在明确需要此库时，从下方文件清单选择并做浏览器验证。
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## 目录
 
 - [CSS 文件](#css-文件)
 - [JS 文件](#js-文件)
+- [其他文件](#其他文件)
 
 ## CSS 文件
 
@@ -64,3 +67,7 @@
 - `{BASE_URL}/libs/editors/tinymce/plugins/help/js/i18n/keynav/bg_BG.min.js` (6.4 KB)
 - `{BASE_URL}/libs/editors/tinymce/plugins/help/js/i18n/keynav/ca.min.js` (4.3 KB)
 - ……其余 67 个文件可通过 `components/index.json` 或服务器目录检索。
+
+## 其他文件
+
+- `{BASE_URL}/libs/editors/tinymce/license.md` (0.3 KB)

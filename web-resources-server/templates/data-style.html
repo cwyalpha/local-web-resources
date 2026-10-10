@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数据分析与字体图标示例</title>
+<link rel="stylesheet" href="{BASE_URL}/fonts/fonts.css">
+<link rel="stylesheet" href="{BASE_URL}/libs/icons/phosphor-icons/src/duotone/style.css">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:#182735;font-family:'Noto Sans SC',sans-serif;padding:clamp(20px,5vw,70px)}main{max-width:1050px;margin:auto}header{border-bottom:2px solid #182735;padding-bottom:25px;margin-bottom:30px}h1{font-family:'Smiley Sans',sans-serif;font-style:oblique;font-weight:400;font-size:clamp(32px,5vw,56px);margin:15px 0}p{line-height:1.8}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}.card{background:white;border:1px solid #dce3e8;border-radius:16px;padding:25px}.card i{font-size:36px;color:#13796e}.value{display:block;font-size:32px;font-weight:700;margin-top:12px}.rounded{font-family:'Resource Han Rounded CN',sans-serif}table{width:100%;border-collapse:collapse;background:white;margin-top:25px}th,td{padding:18px;text-align:left;border-bottom:1px solid #e5eaef}caption{text-align:left;padding:20px 0;font-weight:700}small{color:#526675}
+</style>
+</head>
+<body><main>
+<header><small>本地资源 · 数据与视觉示例</small><h1>让数据清晰，让表达有个性</h1><p class="rounded">得意黑标题、源泉圆体说明与 Phosphor 双色图标。以下使用演示数据展示浏览器内汇总和统计。</p></header>
+<section class="cards" aria-label="统计指标">
+<article class="card"><i class="ph-duotone ph-chart-bar" aria-hidden="true"></i><p>总量</p><strong id="total" class="value">—</strong></article>
+<article class="card"><i class="ph-duotone ph-chart-line" aria-hidden="true"></i><p>中位数</p><strong id="median" class="value">—</strong></article>
+<article class="card"><i class="ph-duotone ph-stack" aria-hidden="true"></i><p>样本标准差</p><strong id="sd" class="value">—</strong></article>
+</section>
+<table><caption class="rounded">按团队分组汇总</caption><thead><tr><th scope="col">团队</th><th scope="col">合计</th></tr></thead><tbody id="rows"></tbody></table>
+<p id="status" role="status">正在加载字体与数据……</p>
+</main>
+<script src="{BASE_URL}/libs/charts/arquero/arquero.min.js"></script>
+<script src="{BASE_URL}/libs/charts/simple-statistics/simple-statistics.min.js"></script>
+<script>
+(async()=>{try{
+const data=[{team:'研发',value:12},{team:'研发',value:18},{team:'设计',value:10},{team:'设计',value:20}];
+const values=data.map(d=>d.value);
+document.getElementById('total').textContent=ss.sum(values);
+document.getElementById('median').textContent=ss.median(values);
+document.getElementById('sd').textContent=ss.sampleStandardDeviation(values).toFixed(2);
+for(const row of aq.from(data).groupby('team').rollup({total:d=>aq.op.sum(d.value)}).objects()){
+const tr=document.createElement('tr');for(const value of [row.team,row.total]){const td=document.createElement('td');td.textContent=value;tr.append(td);}document.getElementById('rows').append(tr);
+}
+await document.fonts.ready;document.getElementById('status').textContent='演示数据已计算完成。';window.__RENDER_READY__=true;
+}catch(error){document.getElementById('status').textContent='资源加载失败，请检查本地资源地址。';console.error(error);}})();
+</script></body></html>

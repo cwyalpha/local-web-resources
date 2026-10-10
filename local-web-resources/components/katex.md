@@ -1,6 +1,6 @@
 # katex
 
-- 版本：0.16.9
+- 版本：0.16.47
 - 分类：JS 核心
 - 推荐级别：conditional
 - 状态：available
@@ -18,9 +18,12 @@
 
 - 需要自动扫描公式时；JS（after-katex）：`{BASE_URL}/libs/js-core/katex/contrib/auto-render.min.js`
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## CSS 文件
 
-- `{BASE_URL}/libs/js-core/katex/katex.min.css` (22.7 KB)
+- `{BASE_URL}/libs/js-core/katex/dist/katex.min.css` (23.4 KB)
+- `{BASE_URL}/libs/js-core/katex/katex.min.css` (23.3 KB)
 
 ## JS 文件
 
@@ -29,7 +32,10 @@
 - `{BASE_URL}/libs/js-core/katex/contrib/mathtex-script-type.min.js` (1.3 KB)
 - `{BASE_URL}/libs/js-core/katex/contrib/mhchem.min.js` (32.9 KB)
 - `{BASE_URL}/libs/js-core/katex/contrib/render-a11y-string.min.js` (8.3 KB)
-- `{BASE_URL}/libs/js-core/katex/katex.min.js` (270.5 KB)
+- `{BASE_URL}/libs/js-core/katex/dist/contrib/auto-render.min.js` (3.4 KB)
+- `{BASE_URL}/libs/js-core/katex/dist/contrib/mhchem.min.js` (32.9 KB)
+- `{BASE_URL}/libs/js-core/katex/dist/katex.min.js` (266.1 KB)
+- `{BASE_URL}/libs/js-core/katex/katex.min.js` (266.1 KB)
 
 ## 字体文件
 
@@ -46,3 +52,7 @@
 - `{BASE_URL}/libs/js-core/katex/fonts/KaTeX_Fraktur-Bold.woff` (13.0 KB)
 - `{BASE_URL}/libs/js-core/katex/fonts/KaTeX_Fraktur-Bold.woff2` (11.1 KB)
 - ……其余 48 个文件可通过 `components/index.json` 或服务器目录检索。
+
+## 其他文件
+
+- `{BASE_URL}/libs/js-core/katex/LICENSE` (1.1 KB)

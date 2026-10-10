@@ -65,7 +65,10 @@ def main():
     failures = []
 
     docs = documented_paths(skill_dir)
-    missing_docs = sorted(path for path in docs if not (server_dir / path).is_file())
+    directory_settings = {"libs/js-core/katex"}  # Reveal's local package root.
+    missing_docs = sorted(path for path in docs if not (
+        (server_dir / path).is_dir() if path in directory_settings else (server_dir / path).is_file()
+    ))
     failures.extend(f"documented path missing: {path}" for path in missing_docs)
 
     curated = entrypoints(skill_dir)

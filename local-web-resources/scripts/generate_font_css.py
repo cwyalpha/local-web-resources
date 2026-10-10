@@ -213,6 +213,14 @@ def main():
             all_sections.append(css)
             print(f"  -> {rule_count} @font-face rules")
 
+    # Preserve release-maintained display faces when regenerating segmented fonts.
+    existing = FONTS_DIR / "fonts-chinese.css"
+    marker = "/* Additional display fonts */"
+    if existing.is_file():
+        previous = existing.read_text(encoding="utf-8")
+        if marker in previous:
+            all_sections.append(marker + previous.split(marker, 1)[1])
+
     # Write output
     output = FONTS_DIR / "fonts-chinese.css"
     content = "\n".join(all_sections)

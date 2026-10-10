@@ -1,0 +1,528 @@
+[
+  {
+    "name": "aos",
+    "status": "added",
+    "path": "libs/animation/aos/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/aos@2.3.4/LICENSE"
+  },
+  {
+    "name": "canvas-confetti",
+    "status": "present"
+  },
+  {
+    "name": "countup.js",
+    "status": "present"
+  },
+  {
+    "name": "gsap",
+    "status": "not-found",
+    "attempts": [
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "name": "lottie-web",
+    "status": "added",
+    "path": "libs/animation/lottie-web/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/lottie-web@5.13.0/LICENSE.md"
+  },
+  {
+    "name": "particles.js",
+    "status": "added",
+    "path": "libs/animation/particles.js/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/particles.js@2.0.0/LICENSE.md"
+  },
+  {
+    "name": "wow",
+    "status": "not-found",
+    "attempts": [
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "name": "Chart.js",
+    "status": "added",
+    "path": "libs/charts/Chart.js/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/chart.js@4.5.0/LICENSE.md"
+  },
+  {
+    "name": "antv-g2",
+    "status": "added",
+    "path": "libs/charts/antv-g2/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/@antv/g2@5.4.1/LICENSE"
+  },
+  {
+    "name": "antv-g6",
+    "status": "added",
+    "path": "libs/charts/antv-g6/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/@antv/g6@5.0.49/LICENSE"
+  },
+  {
+    "name": "antv-x6",
+    "status": "present"
+  },
+  {
+    "name": "apexcharts",
+    "status": "added",
+    "path": "libs/charts/apexcharts/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/apexcharts@5.3.5/LICENSE"
+  },
+  {
+    "name": "cytoscape",
+    "status": "present"
+  },
+  {
+    "name": "d3",
+    "status": "added",
+    "path": "libs/charts/d3/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/d3@7.9.0/LICENSE"
+  },
+  {
+    "name": "echarts",
+    "status": "present"
+  },
+  {
+    "name": "mermaid",
+    "status": "added",
+    "path": "libs/charts/mermaid/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/mermaid@11.12.0/LICENSE"
+  },
+  {
+    "name": "plotly",
+    "status": "present"
+  },
+  {
+    "name": "vis-network",
+    "status": "present"
+  },
+  {
+    "name": "highlight.js",
+    "status": "added",
+    "path": "libs/code-highlight/highlight.js/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/LICENSE"
+  },
+  {
+    "name": "prism",
+    "status": "present"
+  },
+  {
+    "name": "animate.css",
+    "status": "added",
+    "path": "libs/css-frameworks/animate.css/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/animate.css@4.1.1/LICENSE"
+  },
+  {
+    "name": "bootstrap",
+    "status": "added",
+    "path": "libs/css-frameworks/bootstrap/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/LICENSE"
+  },
+  {
+    "name": "bulma",
+    "status": "added",
+    "path": "libs/css-frameworks/bulma/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/bulma@1.0.4/LICENSE"
+  },
+  {
+    "name": "modern-normalize",
+    "status": "added",
+    "paths": [
+      "libs/css-frameworks/modern-normalize/license"
+    ],
+    "source": "https://registry.npmjs.org/modern-normalize/-/modern-normalize-3.0.1.tgz"
+  },
+  {
+    "name": "normalize",
+    "status": "added",
+    "path": "libs/css-frameworks/normalize/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/LICENSE.md"
+  },
+  {
+    "name": "picocss",
+    "status": "added",
+    "path": "libs/css-frameworks/picocss/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/LICENSE.md"
+  },
+  {
+    "name": "tailwindcss-browser",
+    "status": "added",
+    "path": "libs/css-frameworks/tailwindcss-browser/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13/LICENSE"
+  },
+  {
+    "name": "codemirror",
+    "status": "present"
+  },
+  {
+    "name": "monaco-editor",
+    "status": "added",
+    "path": "libs/editors/monaco-editor/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/monaco-editor@0.53.0/LICENSE"
+  },
+  {
+    "name": "tinymce",
+    "status": "added",
+    "paths": [
+      "libs/editors/tinymce/license.md"
+    ],
+    "source": "https://registry.npmjs.org/tinymce/-/tinymce-8.1.2.tgz"
+  },
+  {
+    "name": "bootstrap-icons",
+    "status": "added",
+    "path": "libs/icons/bootstrap-icons/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/LICENSE"
+  },
+  {
+    "name": "font-awesome",
+    "status": "added",
+    "path": "libs/icons/font-awesome/LICENSE.txt",
+    "source": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.1/LICENSE.txt"
+  },
+  {
+    "name": "lucide",
+    "status": "present"
+  },
+  {
+    "name": "material-design-icons",
+    "status": "not-found",
+    "attempts": [
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found"
+    ],
+    "archive_error": "'4.0.0'"
+  },
+  {
+    "name": "remixicon",
+    "status": "added",
+    "paths": [
+      "libs/icons/remixicon/License"
+    ],
+    "source": "https://registry.npmjs.org/remixicon/-/remixicon-4.6.0.tgz"
+  },
+  {
+    "name": "tabler-icons",
+    "status": "added",
+    "path": "libs/icons/tabler-icons/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.35.0/LICENSE"
+  },
+  {
+    "name": "alpinejs",
+    "status": "present"
+  },
+  {
+    "name": "crypto-js",
+    "status": "added",
+    "path": "libs/js-core/crypto-js/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/crypto-js@4.2.0/LICENSE"
+  },
+  {
+    "name": "dayjs",
+    "status": "present"
+  },
+  {
+    "name": "dompurify",
+    "status": "present"
+  },
+  {
+    "name": "jquery",
+    "status": "added",
+    "path": "libs/js-core/jquery/LICENSE.txt",
+    "source": "https://cdn.jsdelivr.net/npm/jquery@3.7.1/LICENSE.txt"
+  },
+  {
+    "name": "katex",
+    "status": "present"
+  },
+  {
+    "name": "lodash.js",
+    "status": "added",
+    "path": "libs/js-core/lodash.js/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/lodash@4.17.21/LICENSE"
+  },
+  {
+    "name": "markdown-it",
+    "status": "present"
+  },
+  {
+    "name": "marked",
+    "status": "added",
+    "path": "libs/js-core/marked/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/marked@16.3.0/LICENSE.md"
+  },
+  {
+    "name": "vue",
+    "status": "present"
+  },
+  {
+    "name": "Sortable",
+    "status": "present"
+  },
+  {
+    "name": "Swiper",
+    "status": "present"
+  },
+  {
+    "name": "fullPage.js",
+    "status": "added",
+    "path": "libs/layout/fullPage.js/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/fullpage.js@4.0.37/LICENSE"
+  },
+  {
+    "name": "gridstack.js",
+    "status": "added",
+    "path": "libs/layout/gridstack.js/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/gridstack@12.3.3/LICENSE"
+  },
+  {
+    "name": "masonry",
+    "status": "not-found",
+    "attempts": [
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "name": "reveal.js",
+    "status": "added",
+    "path": "libs/layout/reveal.js/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/LICENSE"
+  },
+  {
+    "name": "simplebar",
+    "status": "present"
+  },
+  {
+    "name": "datatables",
+    "status": "present"
+  },
+  {
+    "name": "handsontable",
+    "status": "added",
+    "path": "libs/tables/handsontable/LICENSE.txt",
+    "source": "https://cdn.jsdelivr.net/npm/handsontable@16.1.1/LICENSE.txt"
+  },
+  {
+    "name": "tabulator-tables",
+    "status": "present"
+  },
+  {
+    "name": "choices.js",
+    "status": "present"
+  },
+  {
+    "name": "cropperjs",
+    "status": "added",
+    "path": "libs/ui-components/cropperjs/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/cropperjs@2.0.0/LICENSE"
+  },
+  {
+    "name": "driver.js",
+    "status": "present"
+  },
+  {
+    "name": "flatpickr",
+    "status": "added",
+    "path": "libs/ui-components/flatpickr/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/LICENSE.md"
+  },
+  {
+    "name": "intro.js",
+    "status": "added",
+    "paths": [
+      "libs/ui-components/intro.js/license.md"
+    ],
+    "source": "https://registry.npmjs.org/intro.js/-/intro.js-8.3.2.tgz"
+  },
+  {
+    "name": "jstree",
+    "status": "added",
+    "path": "libs/ui-components/jstree/LICENSE-MIT",
+    "source": "https://cdn.jsdelivr.net/npm/jstree@3.3.17/LICENSE-MIT"
+  },
+  {
+    "name": "limonte-sweetalert2",
+    "status": "added",
+    "path": "libs/ui-components/limonte-sweetalert2/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/LICENSE"
+  },
+  {
+    "name": "noUiSlider",
+    "status": "added",
+    "path": "libs/ui-components/noUiSlider/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/nouislider@15.8.1/LICENSE.md"
+  },
+  {
+    "name": "nprogress",
+    "status": "added",
+    "paths": [
+      "libs/ui-components/nprogress/License.md"
+    ],
+    "source": "https://registry.npmjs.org/nprogress/-/nprogress-0.2.0.tgz"
+  },
+  {
+    "name": "select2",
+    "status": "added",
+    "path": "libs/ui-components/select2/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/select2@4.0.13/LICENSE.md"
+  },
+  {
+    "name": "sweetalert2",
+    "status": "added",
+    "path": "libs/ui-components/sweetalert2/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/LICENSE"
+  },
+  {
+    "name": "toastr.js",
+    "status": "not-found",
+    "attempts": [
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "name": "typed.js",
+    "status": "added",
+    "path": "libs/ui-components/typed.js/LICENSE.txt",
+    "source": "https://cdn.jsdelivr.net/npm/typed.js@2.1.0/LICENSE.txt"
+  },
+  {
+    "name": "FileSaver.js",
+    "status": "added",
+    "path": "libs/utils/FileSaver.js/LICENSE.md",
+    "source": "https://cdn.jsdelivr.net/npm/file-saver@2.0.5/LICENSE.md"
+  },
+  {
+    "name": "PapaParse",
+    "status": "present"
+  },
+  {
+    "name": "clipboard.js",
+    "status": "added",
+    "path": "libs/utils/clipboard.js/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/clipboard@2.0.11/LICENSE"
+  },
+  {
+    "name": "dom-to-image",
+    "status": "added",
+    "path": "libs/utils/dom-to-image/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/LICENSE"
+  },
+  {
+    "name": "fuse.js",
+    "status": "added",
+    "path": "libs/utils/fuse.js/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/fuse.js@7.1.0/LICENSE"
+  },
+  {
+    "name": "html-to-image",
+    "status": "added",
+    "path": "libs/utils/html-to-image/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/html-to-image@1.11.13/LICENSE"
+  },
+  {
+    "name": "html2canvas",
+    "status": "added",
+    "path": "libs/utils/html2canvas/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/LICENSE"
+  },
+  {
+    "name": "jspdf",
+    "status": "present"
+  },
+  {
+    "name": "jszip",
+    "status": "present"
+  },
+  {
+    "name": "localforage",
+    "status": "added",
+    "path": "libs/utils/localforage/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/localforage@1.10.0/LICENSE"
+  },
+  {
+    "name": "qrcodejs",
+    "status": "added",
+    "path": "libs/utils/qrcodejs/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/LICENSE"
+  },
+  {
+    "name": "showdown",
+    "status": "added",
+    "path": "libs/utils/showdown/LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/showdown@2.1.0/LICENSE"
+  },
+  {
+    "name": "signature_pad",
+    "status": "present"
+  },
+  {
+    "name": "turndown",
+    "status": "present"
+  },
+  {
+    "name": "xlsx",
+    "status": "present"
+  },
+  {
+    "name": "echarts-stat",
+    "status": "not-found",
+    "attempts": [
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found",
+      "HTTP Error 404: Not Found"
+    ]
+  },
+  {
+    "name": "wordcloud2",
+    "status": "present"
+  },
+  {
+    "name": "impress.js",
+    "status": "present"
+  },
+  {
+    "name": "smiley-sans",
+    "status": "present",
+    "path": "fonts/smiley-sans/LICENSE.txt"
+  },
+  {
+    "name": "resource-han-rounded",
+    "status": "present",
+    "path": "fonts/resource-han-rounded/LICENSE.txt"
+  },
+  {
+    "name": "simple-statistics",
+    "status": "present",
+    "path": "libs/charts/simple-statistics/LICENSE"
+  },
+  {
+    "name": "arquero",
+    "status": "present",
+    "path": "libs/charts/arquero/LICENSE"
+  },
+  {
+    "name": "phosphor-icons",
+    "status": "present",
+    "path": "libs/icons/phosphor-icons/LICENSE"
+  }
+]

@@ -10,6 +10,8 @@
 
 未验证普通 `<script>` / `<link>` 入口。仅在明确需要此库时，从下方文件清单选择并做浏览器验证。
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## CSS 文件
 
 - `{BASE_URL}/libs/ui-components/select2/css/select2.min.css` (14.6 KB)
@@ -37,3 +39,7 @@
 - `{BASE_URL}/libs/ui-components/select2/js/i18n/fr.min.js` (0.8 KB)
 - `{BASE_URL}/libs/ui-components/select2/js/i18n/gl.min.js` (0.8 KB)
 - ……其余 41 个文件可通过 `components/index.json` 或服务器目录检索。
+
+## 其他文件
+
+- `{BASE_URL}/libs/ui-components/select2/LICENSE.md` (1.1 KB)

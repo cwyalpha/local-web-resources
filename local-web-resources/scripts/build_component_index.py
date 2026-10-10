@@ -121,6 +121,8 @@ LIB_META = {
 }
 
 FONT_META = {
+    "smiley-sans": {"desc": "得意黑 v2.0.1：倾斜标题字体，font-style: oblique，400 字重", "css_family": "Smiley Sans"},
+    "resource-han-rounded": {"desc": "源泉圆体 v0.990：简体中文圆体，400/700 字重，保留完整字形", "css_family": "Resource Han Rounded CN"},
     "inter": {"desc": "英文 UI 无衬线字体", "css_family": "Inter"},
     "roboto": {"desc": "英文通用无衬线字体", "css_family": "Roboto"},
     "jetbrains-mono": {"desc": "代码等宽字体", "css_family": "JetBrains Mono"},
@@ -469,6 +471,8 @@ SPECIALIZED_LIBS = {
     "typed.js", "vis-network", "vue",
 }
 
+RESOURCE_OVERRIDES = {}
+
 
 def metadata_for(lib_name: str, category_name: str) -> dict:
     meta = {"desc": "", "version": "", "category": category_name, "tier": "conditional", "status": "available"}
@@ -476,6 +480,7 @@ def metadata_for(lib_name: str, category_name: str) -> dict:
     meta.update(CURATED_META.get(lib_name, {}))
     if lib_name in SPECIALIZED_LIBS and "tier" not in CURATED_META.get(lib_name, {}):
         meta["tier"] = "specialized"
+    meta.update(RESOURCE_OVERRIDES.get(lib_name, {}))
     return meta
 
 
@@ -550,6 +555,7 @@ def generate_component_md(lib_name: str, category_name: str, files: list, meta: 
         ("字体文件", font_files),
         ("其他文件", other_files),
     ]
+    lines.extend(["", "以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。"])
     active_sections = [(title, items) for title, items in sections if items]
     if sum(len(items) for _, items in active_sections) > 80:
         lines.extend(["", "## 目录", ""])
@@ -579,7 +585,7 @@ def generate_catalog_md(categories: dict) -> str:
     lines = [
         "# 资源目录",
         "",
-        "先选“默认/常用”，只有任务明确要求时才加载专业库的组件文档。服务器保留低频资源不代表应默认使用。",
+        "推荐级别用于导航，不是白名单。根据目标、内容和视觉风格自主选择并组合资源，无需等待用户点名专业库；仅加载实际使用的资源，避免无意义的功能重复。",
         "",
         "状态说明：`available` 可用；`legacy` 仅兼容旧页面；`duplicate` 不用于新页面；`license-gated` 使用前核对许可。",
         "",
@@ -616,9 +622,12 @@ def parse_args():
 
 
 def main():
+    global RESOURCE_OVERRIDES
     args = parse_args()
     serv_dir = args.server_dir.expanduser().resolve()
     skill_dir = args.skill_dir.expanduser().resolve()
+    metadata_path = skill_dir / "scripts" / "resource_metadata.json"
+    RESOURCE_OVERRIDES = json.loads(metadata_path.read_text(encoding="utf-8")) if metadata_path.is_file() else {}
     components_dir = skill_dir / "components"
     libs_dir = serv_dir / "libs"
 

@@ -13,6 +13,8 @@
 - CSS（head）：`{BASE_URL}/libs/code-highlight/highlight.js/styles/github.min.css`
 - JS（body-end）：`{BASE_URL}/libs/code-highlight/highlight.js/highlight.min.js`
 
+以下是文件库存，不代表独立浏览器入口。优先使用上面的推荐入口；ESM、CommonJS、内部插件源码可能需要构建工具及额外依赖，不要作为普通 script 直接引用。
+
 ## CSS 文件
 
 - `{BASE_URL}/libs/code-highlight/highlight.js/styles/atom-one-dark.css` (1.3 KB)
@@ -48,3 +50,7 @@
 
 - `{BASE_URL}/libs/code-highlight/highlight.js/es/highlight.min.js` (124.4 KB)
 - `{BASE_URL}/libs/code-highlight/highlight.js/highlight.min.js` (124.5 KB)
+
+## 其他文件
+
+- `{BASE_URL}/libs/code-highlight/highlight.js/LICENSE` (1.5 KB)

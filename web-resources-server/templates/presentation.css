@@ -1,0 +1,20 @@
+/* Include after the Reveal theme. Fonts are served by the shared fonts.css. */
+:root { --deck-accent:#176b87; --deck-muted:#546675; --deck-panel:#f1f5f8; }
+.reveal { font-family:'Noto Sans SC','Inter',sans-serif; font-size:28px; color:#203341; }
+.reveal h1,.reveal h2,.reveal h3 { font-family:inherit; text-transform:none; letter-spacing:-.025em; font-weight:700; color:inherit; }
+.reveal h1 { font-size:2.25em; } .reveal h2 { font-size:1.5em; }
+.reveal .slides { text-align:left; } .reveal .slides section { box-sizing:border-box; }
+.reveal .eyebrow { color:var(--deck-accent); font-size:.55em; font-weight:700; letter-spacing:.15em; }
+.reveal .muted { color:var(--deck-muted); font-size:.65em; }
+.reveal .columns { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:start; }
+.reveal .card { background:var(--deck-panel); border-radius:12px; padding:24px; }
+.reveal .chart { height:360px; width:100%; } .reveal pre { width:100%; font-size:.55em; margin-left:0; }
+.reveal code { font-family:'JetBrains Mono',monospace; }
+.reveal .mermaid { text-align:center; } .reveal .mermaid svg { max-width:100%; max-height:350px; }
+.reveal .title-rule { width:100px; height:5px; background:var(--deck-accent); margin:26px 0; }
+body.deck-dark { background:#12232d; }
+.deck-dark { --deck-accent:#69d2d9; --deck-muted:#b4c8d4; --deck-panel:#203a48; }
+.deck-dark .reveal { color:#eef5f9; }
+.deck-dark .reveal .progress { color:var(--deck-accent); }
+.deck-status { position:fixed; bottom:12px; left:12px; font:14px sans-serif; color:#b3261e; z-index:50; }
+@media print { .deck-status { display:none; } }
