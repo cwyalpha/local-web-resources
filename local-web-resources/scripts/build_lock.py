@@ -10,7 +10,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--server-dir',type=Path,default=base/'web-resources-server')
     parser.add_argument('--skill-dir',type=Path,default=base/'local-web-resources')
-    parser.add_argument('--sources',type=Path,default=base/'reports/file-sources.json')
+    parser.add_argument('--sources',type=Path,required=True,help='Reviewed per-file provenance JSON maintained locally; not bundled with the public repository.')
     args=parser.parse_args();server=args.server_dir.resolve()
     sources=json.loads(args.sources.read_text(encoding='utf-8'))
     index=json.loads((args.skill_dir/'components/index.json').read_text(encoding='utf-8'))

@@ -39,4 +39,4 @@ deployment, and redistribution comply with the applicable upstream terms.
 
 ## Additional resources
 
-Arquero (BSD-3-Clause), simple-statistics (ISC), and Phosphor Icons (MIT) include their package LICENSE files. Smiley Sans v2.0.1 and Resource Han Rounded v0.990 include upstream SIL OFL 1.1 texts. Rounded font WOFF2 files retain the complete upstream glyph set. Pinned sources and archive checksums are recorded in `reports/additional-resources.json`.
+Arquero (BSD-3-Clause), simple-statistics (ISC), and Phosphor Icons (MIT) include their package LICENSE files. Smiley Sans v2.0.1 and Resource Han Rounded v0.990 include upstream SIL OFL 1.1 texts. Rounded font WOFF2 files retain the complete upstream glyph set. Per-file sources and checksums are recorded in `web-resources-server/resources.lock.json`.

@@ -1,4 +1,4 @@
-# This repository publishes the paired Skills, resource server, and release reports
+# This repository publishes the paired Skills, resource server
 # plus the root documentation and license files.
 /*
 !/.gitignore
@@ -12,8 +12,6 @@
 !/web-resources-server/**
 !/render-web-artifacts/
 !/render-web-artifacts/**
-!/reports/
-!/reports/**
 
 # Local metadata and generated test artifacts
 **/.DS_Store
@@ -35,3 +33,6 @@
 /web-resources-server/libs/editors/codemirror/addon/mode/multiplex_test.min.js
 /web-resources-server/libs/layout/gridstack.js/vitest.config.min.js
 /web-resources-server/libs/layout/gridstack.js/vitest.setup.min.js
+
+# Keep validation reports local.
+/reports/

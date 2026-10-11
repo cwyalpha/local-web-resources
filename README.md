@@ -66,7 +66,7 @@ Handsontable、Intro.js、fullPage.js 和 TinyMCE 已保留用于兼容既有环
 
 当前配套资源为 90 个库、11 个字体家族，包含 Reveal.js / impress.js HTML 演示、数据分析、中文字体与图标。常用选型仅作参考，Agent 可根据任务自主组合已验证资源。
 
-模板位于 `web-resources-server/templates/`，使用前将 `{BASE_URL}` 替换为实际资源地址。版本来源与验证结果见 [升级与核对报告](reports/升级与核对报告.md)，来源哈希由 `web-resources-server/resources.lock.json` 记录。
+模板位于 `web-resources-server/templates/`，使用前将 `{BASE_URL}` 替换为实际资源地址。版本来源及文件哈希由 `web-resources-server/resources.lock.json` 记录。
 
 在仓库根目录执行：
 
